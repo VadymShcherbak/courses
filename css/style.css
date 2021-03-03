@@ -49,6 +49,21 @@ body {
     width: 50%;
   }
 
+  th:first-child,
+  td:first-child {
+    width: 15%;
+  }
+
+  th:nth-child(2),
+  td:nth-child(2) {
+    width: 25%;
+  }
+
+  th:last-child,
+  td:last-child {
+    width: 55%;
+  }
+
   td a, th a {
     padding: 10px;
   }
@@ -70,11 +85,16 @@ body {
 
     th:first-child,
     td:first-child {
-      width: 40%;
+      width: 30%;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2) {
+      display: none;
     }
   
     th:last-child,
     td:last-child {
-      width: 60%;
+      width: 70%;
     }
   }
