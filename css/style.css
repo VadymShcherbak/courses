@@ -4,11 +4,11 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    min-height: calc(100vh - 30px);
+    min-height: calc(100vh - 60px);
     margin: 0;
     font-family: Roboto, sans-serif;
     text-transform: uppercase;
-    padding: 15px;
+    padding: 30px 15px;
     font-size: 16px;
     background-color: #F9F9F9;
   }
@@ -47,6 +47,12 @@ body {
     border-bottom: 1px solid #E6E6E6;
     text-align: center;
     width: 50%;
+  }
+
+  th {
+    position: sticky;
+    top: -1px;
+    background-color: #f7f7f7;
   }
 
   th:first-child,
