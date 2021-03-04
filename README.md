@@ -1,2 +1,2 @@
 # Projects
-[Github Pages Link](https://erwindonovan.github.io/courses/index.html)
+[Github Pages Link](https://vadymshcherbak.github.io/courses/)
