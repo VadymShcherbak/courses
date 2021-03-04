@@ -1,0 +1,180 @@
+@import './bootstrap-grid.scss';
+@import './reset.scss';
+
+
+
+// ------------------------------------------------------------------------------------------------
+// BASE-STYLE
+// ------------------------------------------------------------------------------------------------
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #1d1d1d;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #484848;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.main-burger {
+    display: none;
+    font-size: 36px;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+// ------------------------------------------------------------------------------------------------
+// MAIN-HEADER
+// ------------------------------------------------------------------------------------------------
+
+.main-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.main-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 47px 78px;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+        &:last-child {
+
+            a {
+                font-size: 34px;
+                padding: 5px;
+            }
+        }
+    }
+
+    a {
+        display: inline-block;
+        padding: 15px 20px;
+        font-size: 17px;
+        font-weight: 600;
+        color: #fff;
+    }
+}
+
+// ------------------------------------------------------------------------------------------------
+// CREATIVE
+// ------------------------------------------------------------------------------------------------
+
+.creative {
+    min-height: 97vh;
+    background: url(img/background-section1.jpg)center no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------
+// MEDIA
+// ------------------------------------------------------------------------------------------------
+
+@media (max-width: 1240px) {
+
+    .main-header-content {
+        padding: 30px;
+    }
+
+    .main-menu {
+
+        a {
+            padding: 10px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .main-menu {
+        display: none;
+    }
+
+    .main-burger {
+        display: block;
+    }
+}
