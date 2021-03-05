@@ -40,12 +40,23 @@ a {
     transition: all .4s ease;
 }
 
-.main-burger {
-    display: none;
-    font-size: 36px;
-    padding: 10px 20px;
-    color: #fff;
-    cursor: pointer;
+// ------------------------------------------
+// BASE-CLASS
+// ------------------------------------------
+
+.button {
+        display: inline-block;
+        padding: 17px 40px;
+        border-radius: 35px;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #fff;
+}
+
+.title {
+    font-size: 50px;
+    line-height: 1.2;
 }
 
 .palatino {
@@ -80,7 +91,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 47px 78px;
+    padding: 10px 78px;
+    min-height: 155px;
 }
 
 .main-menu {
@@ -111,6 +123,14 @@ a {
     }
 }
 
+.main-burger {
+    display: none;
+    font-size: 36px;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
 // ------------------------------------------------------------------------------------------------
 // CREATIVE
 // ------------------------------------------------------------------------------------------------
@@ -131,7 +151,7 @@ a {
 
 .creative-left {
     max-width: 800px;
-    padding: 10px 20px;
+    padding: 165px 20px;
 
     h1 {
         font-size: 64px;
@@ -170,16 +190,6 @@ a {
             background-color: #9631cb;
         }
     }
-
-    a  {display: inline-block;
-        padding: 17px 40px;
-        border-radius: 35px;
-        font-size: 16px;
-        font-weight: 600;
-        text-transform: uppercase;
-        color: #fff;
-    }
-
 }
 
 .creative-right {
@@ -187,6 +197,87 @@ a {
     right: 10%;
     bottom: 0;
     width: 50%;
+}
+
+// ------------------------------------------------------------------------------------------------
+// WATCH
+// ------------------------------------------------------------------------------------------------
+
+.row-watch {
+    align-items: center;
+    background: url(img/backgroundMap.jpg)center no-repeat;
+}
+
+.watch-left {
+
+    h3 {
+        margin-bottom: 6px;
+    }
+
+    h4 {
+        font-size: 33px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.8;
+        padding-right: 47px;
+        margin-bottom: 57px;
+    }
+}
+
+.watch-menu {
+    display: flex;
+    margin-bottom: 14px;
+    padding: 15px 23px;
+    overflow-y: hidden;
+
+    li {
+        white-space: nowrap;
+
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+
+        &:hover,
+        &.active {
+
+            a {
+                background-color: #F42267;
+                color: #fff;
+                box-shadow: 1.169px 3.825px 16px 0px rgba(1, 2, 2, 0.35);
+            }
+        }
+    }
+
+    a {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 15px 20px;
+        border-radius: 25px;
+        color:  #484848;
+    }
+}
+
+.btn-rounded {
+    padding: 10px 25px;
+    background-color: #F42267;
+    border-radius: 15px;
+
+    &:hover {
+        box-shadow: 0px 10px 0px 0px rgba(255, 89, 144, 0.8);
+    }
+}
+
+.watch-right {
+
+    img {
+        margin-top: 100px;
+        margin-left: 55px;
+    }
 }
 
 
@@ -241,6 +332,10 @@ a {
 // MEDIA
 // ------------------------------------------------------------------------------------------------
 
+// ------------------------------------------
+// 1240px
+// ------------------------------------------
+
 @media (max-width: 1240px) {
 
     .main-header-content {
@@ -253,7 +348,23 @@ a {
             padding: 10px;
         }
     }
+
+    .watch {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .watch-right {
+
+        img {
+            margin: 0;
+        }
+    }
 }
+
+// ------------------------------------------
+// 1024px
+// ------------------------------------------
 
 @media (max-width: 1024px) {
 
@@ -266,35 +377,73 @@ a {
     }
 
     .creative-left {
-        width: 700px;
+        max-width: 700px;
         padding: 50px;
 
         h1 {
             font-size: 44px;
         }
     }
+
+    .watch-left {
+
+        p {
+            padding-right: 0;
+        }
+    }
 }
+
+// ------------------------------------------
+// 990px
+// ------------------------------------------
+
+@media (max-width: 990px) {
+
+    .row-watch {
+        background: none;
+    }
+
+    .watch-left {
+        margin-bottom: 45px;
+
+        p {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+// ------------------------------------------
+// 768px
+// ------------------------------------------
 
 @media (max-width: 768px) {
 
+    .title {
+        font-size: 30px;
+    }
+
+    .palatino {
+        font-size: 20px;
+    }
+
     .creative-left {
         width: auto;
-        padding: 20px 40px;
+        padding: 20px;
         text-align: center;
 
-        h1 {
-            font-size: 38px;
-
-        }
-
-        h4 {
-            font-size: 30px;
-        }
-
-        p {
-            font-size: 18px;
-            margin-bottom: 45px;
-        }
+            h4 {
+                font-size: 20px;
+            }
+    
+            h1 {
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+    
+            p {
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
     }
 
     .creative-btn {
@@ -309,39 +458,23 @@ a {
         }
     }
 
+    .button {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
+
     .creative-right {
         display: none;
     }
 }
 
+// ------------------------------------------
+// 460px
+// ------------------------------------------
+
 @media (max-width: 460px) {
 
     .creative {
         min-height: 720px;
-    }
-
-    .creative-left {
-
-        h4 {
-            font-size: 20px;
-        }
-
-        h1 {
-            font-size: 30px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 15px;
-            margin-bottom: 20px;
-        }
-    }
-
-    .creative-btn {
-
-        a {
-            padding: 15px 30px;
-            font-size: 14px;
-        }
     }
 }
