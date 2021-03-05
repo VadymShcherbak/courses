@@ -1,7 +1,18 @@
 @import './bootstrap-grid.scss';
 @import './reset.scss';
 
+// ------------------------------------------
+// MIXIN
+// ------------------------------------------
 
+@mixin absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+}
 
 // ------------------------------------------------------------------------------------------------
 // BASE-STYLE
@@ -227,7 +238,7 @@ a {
     }
 }
 
-.watch-menu {
+.inner-menu {
     display: flex;
     margin-bottom: 14px;
     padding: 15px 23px;
@@ -263,9 +274,10 @@ a {
 }
 
 .btn-rounded {
-    padding: 10px 25px;
+    padding: 10px 20px;
     background-color: #F42267;
-    border-radius: 15px;
+    font-size: 15px;
+    border-radius: 5px;
 
     &:hover {
         box-shadow: 0px 10px 0px 0px rgba(255, 89, 144, 0.8);
@@ -324,6 +336,10 @@ a {
     padding-bottom: 80px;
     padding-top: 80px;
 
+    h5 {
+        font-weight: 400;
+    }
+
     p {
         width: 50%;
         margin: 0 auto;
@@ -345,6 +361,7 @@ a {
     text-align: center;
     padding-top: 85px;
     padding-bottom: 85px;
+    margin-bottom: 98px;
 
     h3 {
         margin-bottom: 50px;
@@ -361,6 +378,171 @@ a {
         font-size: 20px;
         line-height: 1.5;
     }
+}
+
+// ------------------------------------------------------------------------------------------------
+// AGENCY
+// ------------------------------------------------------------------------------------------------
+
+.agency {
+    margin-bottom: 115px;
+}
+
+.agency-left {
+    margin-bottom: 50px;
+
+    h3 {
+        font-size: 46px;
+    }
+
+    h4 {
+        font-size: 33px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+}
+
+.agency-box {
+
+    img {
+        margin-bottom: 15px;
+    }
+
+    h6 {
+        font-size: 25px;
+    }
+
+    p {
+        margin-bottom: 43px;
+    }
+}
+
+.agency-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        z-index: 1;
+
+        @include absolute;
+    }
+
+    &:hover {
+
+        img {
+            opacity: .6;
+        }
+
+        .agency-play {
+            background-color: #9631cb;
+        }
+    }
+}
+
+.agency-right-img {
+    position: relative;
+    border-radius: 10px;
+
+    img {
+        transition: opacity .4s ease;
+    }
+}
+
+.agency-item {
+    position: absolute;
+}
+
+.agency-play {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: #F42267;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .4s ease;
+
+    i {
+        font-size: 42px;
+        color: #fff;
+    }
+}
+
+// ------------------------------------------------------------------------------------------------
+// WORK
+// ------------------------------------------------------------------------------------------------
+
+.work {
+    background: #F1F1F1;
+    padding-top: 75px;
+    padding-bottom: 110px;
+    text-align: center;
+
+}
+
+.work-head {
+    max-width: 950px;
+    text-align: center;
+    margin: 0 auto;
+
+    h3 {
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 50px;
+    }
+}
+
+.banner {
+    position: relative;
+
+    a {
+        z-index: 1;
+
+        @include absolute;
+
+    }
+
+    &:hover {
+
+        .banner-img {
+
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.banner-img {
+    overflow: hidden;
+    border-radius: 5px;
+
+    img {
+        width: 100%;
+        border-radius: 5px;
+        transition: all .4s ease;
+    }
+}
+
+.menu-center {
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+.col-bottom {
+    margin-bottom: 30px;
+}
+
+.row-btm {
+    margin-bottom: 90px;
 }
 
 
@@ -474,6 +656,32 @@ a {
             padding-right: 0;
         }
     }
+
+    .agency-left {
+        margin-bottom: 35px;
+
+        h4 {
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+
+        h3 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .agency-box {
+
+        h6 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 // ------------------------------------------
@@ -510,6 +718,13 @@ a {
 
         p {
             width: auto;
+        }
+    }
+
+    .agency-box {
+
+        .btn-rounded {
+            margin-bottom: 55px;
         }
     }
 }
@@ -582,6 +797,14 @@ a {
         p {
             font-size: 14px;
         }
+    }
+
+    .grow {
+        margin-bottom: 60px;
+    }
+
+    .agency {
+        margin-bottom: 60px;
     }
 }
 
