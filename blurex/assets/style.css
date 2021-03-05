@@ -1851,6 +1851,27 @@ a {
   align-items: center;
 }
 
+.grow {
+  background: url(img/backgroundgrow.jpg) center no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+.grow h3 {
+  margin-bottom: 50px;
+}
+.grow .palatino {
+  font-size: 48px;
+  line-height: 1;
+}
+.grow p {
+  max-width: 950px;
+  margin: 0 auto 55px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
 @media (max-width: 1240px) {
   .main-header-content {
     padding: 30px;
@@ -1962,6 +1983,16 @@ a {
 
   .creative-right {
     display: none;
+  }
+
+  .grow h3 {
+    margin-bottom: 30px;
+  }
+  .grow .palatino {
+    font-size: 20px;
+  }
+  .grow p {
+    font-size: 14px;
   }
 }
 @media (max-width: 460px) {
