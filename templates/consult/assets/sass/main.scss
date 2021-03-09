@@ -39,6 +39,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
+	text-transform: uppercase;
 	color: $title-color;
 	margin-bottom: 20px;
 }
@@ -92,12 +93,24 @@ a {
 .button {
 		display: inline-block;
 		background-color: $button-bg-color;
-		padding: 17px 40px;
+		padding: 15px 30px;
 		border-radius: 35px;
 		font-size: 13px;
 		font-weight: 400;
 		text-transform: uppercase;
 		color: #fff;
+
+		&.button-large {
+			padding: 17px 40px;
+		}
+
+		&:hover {
+			background-color: $orange;
+		}
+}
+
+.top-title {
+	text-transform: uppercase;
 }
 
 .color-scheme-light {
@@ -222,6 +235,7 @@ a {
 	justify-content: flex-end;
 	background: url(img/background1.jpg)center no-repeat;
 	background-size: cover;
+	margin-bottom: 95px;
 }
 
 .slider-left,
@@ -350,20 +364,31 @@ a {
 				color: #fff;
 			}
 		}
-
-		.btn-large {
-
-			a {
-				background-color: $orange;
-			}
-		}
 	}
 }
 
-.slider-box-link {
+// ------------------------------------------------------------------------------------------------
+// ABOUT
+// ------------------------------------------------------------------------------------------------
 
-	@include absolute; 
-	z-index: 1;
+.about {
+	margin-bottom: 95px;
+}
+
+.about-left {
+	text-align: right;
+	padding-right: 20px;
+
+	p {
+		line-height: 1.8;
+		margin-bottom: 45px;
+	}
+}
+
+.about-excellence {
+	display: flex;
+    justify-content: center;
+    margin-top: -24.04%;
 }
 
 
@@ -431,6 +456,19 @@ a {
 		display: block;
 		margin-left: 25px;
 	}
+
+	.about-left {
+
+		h3 {
+			font-size: 26px;
+			margin-bottom: 10px;
+		}
+
+		p {
+			line-height: 1.4;
+			margin-bottom: 10px;
+		}
+	}
 }
 
 //**** MAX-WIDTH 991px ****//
@@ -443,6 +481,10 @@ a {
 			border-bottom: 1px solid #00A6D3;;
 		}
 	}
+
+	.about-excellence {
+		display: none;
+	}
 }
 
 //**** MAX-WIDTH 768px ****//
@@ -453,6 +495,10 @@ a {
 		display: none;
 	}
 
+	.industry {
+		margin-bottom: 45px;
+	}
+
 	.slider-left,
 	.slider-right {
 		display: none;
@@ -460,6 +506,18 @@ a {
 
 	.industry-slider-box {
 		max-width: 100%;
+	}
+
+	.about {
+		margin-bottom: 45px;
+	}
+
+	.about-btm {
+		margin-bottom: 20px;
+
+		img {
+			width: 100%;
+		}
 	}
 }
 

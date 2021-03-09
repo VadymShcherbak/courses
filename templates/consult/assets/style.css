@@ -1595,6 +1595,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
+  text-transform: uppercase;
   color: #343a3b;
   margin-bottom: 20px;
 }
@@ -1643,12 +1644,22 @@ a {
 .button {
   display: inline-block;
   background-color: #16D428;
-  padding: 17px 40px;
+  padding: 15px 30px;
   border-radius: 35px;
   font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
+}
+.button.button-large {
+  padding: 17px 40px;
+}
+.button:hover {
+  background-color: #ffac55;
+}
+
+.top-title {
+  text-transform: uppercase;
 }
 
 .color-scheme-light h1, .color-scheme-light h2, .color-scheme-light h3, .color-scheme-light h4, .color-scheme-light h5, .color-scheme-light h6, .color-scheme-light i {
@@ -1741,6 +1752,7 @@ a {
   justify-content: flex-end;
   background: url(img/background1.jpg) center no-repeat;
   background-size: cover;
+  margin-bottom: 95px;
 }
 
 .slider-left,
@@ -1858,17 +1870,24 @@ a {
 .industry-col:hover .slider-box-inner-right i {
   color: #fff;
 }
-.industry-col:hover .btn-large a {
-  background-color: #ffac55;
+
+.about {
+  margin-bottom: 95px;
 }
 
-.slider-box-link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
+.about-left {
+  text-align: right;
+  padding-right: 20px;
+}
+.about-left p {
+  line-height: 1.8;
+  margin-bottom: 45px;
+}
+
+.about-excellence {
+  display: flex;
+  justify-content: center;
+  margin-top: -24.04%;
 }
 
 @media (max-width: 1024px) {
@@ -1880,15 +1899,32 @@ a {
     display: block;
     margin-left: 25px;
   }
+
+  .about-left h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  .about-left p {
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
 }
 @media (max-width: 991px) {
   .industry-col:nth-last-child(2) {
     border-bottom: 1px solid #00A6D3;
   }
+
+  .about-excellence {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .header-top {
     display: none;
+  }
+
+  .industry {
+    margin-bottom: 45px;
   }
 
   .slider-left,
@@ -1898,6 +1934,17 @@ a {
 
   .industry-slider-box {
     max-width: 100%;
+  }
+
+  .about {
+    margin-bottom: 45px;
+  }
+
+  .about-btm {
+    margin-bottom: 20px;
+  }
+  .about-btm img {
+    width: 100%;
   }
 }
 @media (max-width: 485px) {
