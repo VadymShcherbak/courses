@@ -64,6 +64,7 @@ p {
 	font-family: 'Domine', serif;
 	font-size: 15px;
 	margin-bottom: 20px;
+	line-height: 1.8;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -371,16 +372,11 @@ a {
 // ABOUT
 // ------------------------------------------------------------------------------------------------
 
-.about {
-	margin-bottom: 95px;
-}
-
 .about-left {
 	text-align: right;
 	padding-right: 20px;
 
 	p {
-		line-height: 1.8;
 		margin-bottom: 45px;
 	}
 }
@@ -389,6 +385,35 @@ a {
 	display: flex;
     justify-content: center;
     margin-top: -24.04%;
+}
+
+// ------------------------------------------------------------------------------------------------
+// STEPS
+// ------------------------------------------------------------------------------------------------
+
+.steps {
+	background: #E7EFF1;
+	padding-top: 95px;
+	padding-bottom: 65px;
+	margin-top: -120px;
+}
+
+.steps-wrapper {
+	margin-bottom: 30px;
+
+	img {
+		margin-bottom: 33px;
+	}
+
+	h5 {
+		margin-bottom: 30px;
+	}
+}
+
+.steps-number {
+	font-size: 20px;
+	color: $button-bg-color;
+	margin-bottom: 15px;
 }
 
 
@@ -484,6 +509,31 @@ a {
 
 	.about-excellence {
 		display: none;
+	}
+
+	.about {
+		margin-bottom: 45px;
+	}
+
+	.steps {
+		margin-top: 0;
+		padding-top: 60px;
+		padding-bottom: 30px;
+	}
+
+	.steps-wrapper {
+
+		img {
+			margin-bottom: 10px;
+		}
+
+		h5 {
+			margin-bottom: 15px;
+		}
+	}
+
+	.steps-number {
+		margin-bottom: 5px;
 	}
 }
 
