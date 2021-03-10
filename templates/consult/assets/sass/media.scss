@@ -1,0 +1,113 @@
+// ------------------------------------------------------------------------------------------------
+// MEDIA
+// ------------------------------------------------------------------------------------------------
+
+@media (max-width: 1024px) {
+
+	.main-menu {
+		display: none;
+	}
+
+	.main-burger {
+		display: block;
+		margin-left: 25px;
+	}
+
+	.about-left {
+
+		h3 {
+			font-size: 26px;
+			margin-bottom: 10px;
+		}
+
+		p {
+			line-height: 1.4;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+//**** MAX-WIDTH 991px ****//
+
+@media (max-width: 991px) {
+
+	.industry-col {
+
+		&:nth-last-child(2) {
+			border-bottom: 1px solid #00A6D3;;
+		}
+	}
+
+	.about-excellence {
+		display: none;
+	}
+
+	.about {
+		margin-bottom: 45px;
+	}
+
+	.steps {
+		margin-top: 0;
+		padding-top: 60px;
+		padding-bottom: 30px;
+	}
+
+	.steps-wrapper {
+
+		img {
+			margin-bottom: 10px;
+		}
+
+		h5 {
+			margin-bottom: 15px;
+		}
+	}
+
+	.steps-number {
+		margin-bottom: 5px;
+	}
+}
+
+//**** MAX-WIDTH 768px ****//
+
+@media (max-width: 768px) {
+
+	.header-top {
+		display: none;
+	}
+
+	.industry,
+	.about,
+	.project{
+		margin-bottom: 45px;
+	}
+
+	.slider-left,
+	.slider-right {
+		display: none;
+	}
+
+	.industry-slider-box {
+		max-width: 100%;
+	}
+
+	.about-btm {
+		margin-bottom: 20px;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+//**** MAX-WIDTH 485 ****//
+
+@media (max-width: 485px) {
+
+	.back-orange {
+
+		h3 {
+			font-size: 26px;
+		}
+	}
+}

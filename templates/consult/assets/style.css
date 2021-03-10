@@ -1671,7 +1671,6 @@ a {
 }
 
 .header-top {
-  height: 40px;
   background: #262829;
 }
 
@@ -1722,7 +1721,7 @@ a {
   display: flex;
   margin-right: -18px;
 }
-.main-menu li:hover a {
+.main-menu li.active a, .main-menu li:hover a {
   color: #ffac55;
 }
 .main-menu a {
@@ -1790,6 +1789,7 @@ a {
 
 .industry-slider-box {
   max-width: 458px;
+  margin: 0;
 }
 
 .slider-box-inner {
@@ -1856,6 +1856,14 @@ a {
   border-bottom: 1px solid #00A6D3;
   transition: background-color 0.4s ease;
 }
+.industry-col .slider-box-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
 .industry-col:nth-child(even) {
   border-right: 1px solid #00A6D3;
 }
@@ -1880,17 +1888,46 @@ a {
   margin-bottom: 45px;
 }
 
+.about-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .about-excellence {
   display: flex;
   justify-content: center;
-  margin-top: -24.04%;
+  background-color: #03B6E7;
+  border: 6px solid #fff;
+  padding: 20px;
+  margin-top: -20%;
+  box-shadow: 0px 9px 16px 0px rgba(154, 154, 154, 0.3);
+}
+
+.about-medal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  border: 1px solid #35C5EC;
+}
+.about-medal span {
+  font-size: 75px;
+}
+
+.medal-year {
+  font-size: 10px;
+  text-transform: uppercase;
 }
 
 .steps {
   background: #E7EFF1;
   padding-top: 95px;
   padding-bottom: 65px;
-  margin-top: -120px;
+  margin-top: -105px;
   margin-bottom: 95px;
 }
 
@@ -1927,6 +1964,14 @@ a {
 }
 .project-wrapper img {
   width: 100%;
+}
+.project-wrapper a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 .project-wrapper:before {
   content: "";
@@ -2036,11 +2081,11 @@ a {
   margin-right: 30px;
   transition: opacity 0.4s ease;
 }
-.clients-info img:hover {
-  opacity: 1;
-}
 .clients-info h6 {
   margin-bottom: 5px;
+}
+.clients-info.active img, .clients-info:hover img {
+  opacity: 1;
 }
 
 .client-circle {

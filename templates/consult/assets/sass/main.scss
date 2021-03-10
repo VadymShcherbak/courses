@@ -83,7 +83,7 @@ a {
 }
 
 // ------------------------------------------
-// HELP-CLASS
+// MODULS
 // ------------------------------------------
 
 .container {
@@ -92,22 +92,22 @@ a {
 }
 
 .button {
-		display: inline-block;
-		background-color: $button-bg-color;
-		padding: 15px 30px;
-		border-radius: 35px;
-		font-size: 13px;
-		font-weight: 400;
-		text-transform: uppercase;
-		color: #fff;
+	display: inline-block;
+	background-color: $button-bg-color;
+	padding: 15px 30px;
+	border-radius: 35px;
+	font-size: 13px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #fff;
 
-		&.button-large {
-			padding: 17px 40px;
-		}
+	&.button-large {
+		padding: 17px 40px;
+	}
 
-		&:hover {
-			background-color: $orange;
-		}
+	&:hover {
+		background-color: $orange;
+	}
 }
 
 .top-title {
@@ -132,13 +132,12 @@ a {
 //**** HEADER-TOP ****//
 
 .header-top {
-    height: 40px;
 	background: #262829;
 }
 
 .header-top-inner {
 	display: flex;
-    justify-content: flex-end;
+	justify-content: flex-end;
 	height: 40px;
 
 	span {
@@ -190,6 +189,7 @@ a {
 
 	li {
 
+		&.active,
 		&:hover {
 
 			a {
@@ -253,9 +253,9 @@ a {
 	i {
 		min-height: 100%;
 		font-size: 32px;
-    	display: flex;
-    	align-items: center;
-    	justify-content: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	&:hover {
@@ -273,15 +273,16 @@ a {
 
 .industry-slider-box {
 	max-width: 458px;
+	margin: 0;
 }
 
 .slider-box-inner {
 	display: flex;
-    justify-content: space-between;
-    padding-top: 36px;
-    padding-bottom: 36px;
-    padding-left: 36px;
-    padding-right: 15px;
+	justify-content: space-between;
+	padding-top: 36px;
+	padding-bottom: 36px;
+	padding-left: 36px;
+	padding-right: 15px;
 }
 
 .slider-box-inner-left {
@@ -346,6 +347,11 @@ a {
 	border-bottom: 1px solid #00A6D3;
 	transition: background-color .4s ease;
 
+	.slider-box-link {
+		@include absolute;
+		z-index: 1;
+	}
+
 	&:nth-child(even) {
 		border-right: 1px solid #00A6D3;
 	}
@@ -381,10 +387,40 @@ a {
 	}
 }
 
+.about-right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .about-excellence {
 	display: flex;
-    justify-content: center;
-    margin-top: -24.04%;
+	justify-content: center;
+	background-color: #03B6E7;
+	border: 6px solid #fff;
+	padding: 20px;
+	margin-top: -20%;
+	box-shadow: 0px 9px 16px 0px rgba(154, 154, 154, 0.3);
+}
+
+.about-medal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	color: #fff;
+	border: 1px solid #35C5EC;
+
+	span {
+		font-size: 75px;
+	}
+}
+
+.medal-year {
+	font-size: 10px;
+	text-transform: uppercase;
 }
 
 // ------------------------------------------------------------------------------------------------
@@ -395,7 +431,7 @@ a {
 	background: #E7EFF1;
 	padding-top: 95px;
 	padding-bottom: 65px;
-	margin-top: -120px;
+	margin-top: -105px;
 	margin-bottom: 95px;
 }
 
@@ -438,6 +474,11 @@ a {
 
 	img {
 		width: 100%;
+	}
+
+	a {
+		@include absolute; 
+		z-index: 1;
 	}
 
 	&:before {
@@ -485,16 +526,16 @@ a {
 
 .project-item {
 	position: absolute;
-    top: 20px;
-    left: 20px;
-    right: auto;
-    bottom: auto;
-    padding: 6px 24px;
+	top: 20px;
+	left: 20px;
+	right: auto;
+	bottom: auto;
+	padding: 6px 24px;
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #fff;
-    border: 2px solid #ffac56;
-    border-radius: 35px;
+	border: 2px solid #ffac56;
+	border-radius: 35px;
 }
 
 .project-inner {
@@ -560,14 +601,17 @@ a {
 		opacity: .6;
 		margin-right: 30px;
 		transition: opacity .4s ease;
-
-		&:hover {
-			opacity: 1;
-		}
 	}
 
 	h6 {
 		margin-bottom: 5px;
+	}
+
+	&.active,
+	&:hover {
+		img {
+			opacity: 1;
+		}
 	}
 }
 
@@ -579,166 +623,5 @@ a {
 }
 
 
+@import './media.scss';
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ------------------------------------------------------------------------------------------------
-// MEDIA
-// ------------------------------------------------------------------------------------------------
-
-@media (max-width: 1024px) {
-
-	.main-menu {
-		display: none;
-	}
-
-	.main-burger {
-		display: block;
-		margin-left: 25px;
-	}
-
-	.about-left {
-
-		h3 {
-			font-size: 26px;
-			margin-bottom: 10px;
-		}
-
-		p {
-			line-height: 1.4;
-			margin-bottom: 10px;
-		}
-	}
-}
-
-//**** MAX-WIDTH 991px ****//
-
-@media (max-width: 991px) {
-
-	.industry-col {
-
-		&:nth-last-child(2) {
-			border-bottom: 1px solid #00A6D3;;
-		}
-	}
-
-	.about-excellence {
-		display: none;
-	}
-
-	.about {
-		margin-bottom: 45px;
-	}
-
-	.steps {
-		margin-top: 0;
-		padding-top: 60px;
-		padding-bottom: 30px;
-	}
-
-	.steps-wrapper {
-
-		img {
-			margin-bottom: 10px;
-		}
-
-		h5 {
-			margin-bottom: 15px;
-		}
-	}
-
-	.steps-number {
-		margin-bottom: 5px;
-	}
-}
-
-//**** MAX-WIDTH 768px ****//
-
-@media (max-width: 768px) {
-
-	.header-top {
-		display: none;
-	}
-
-	.industry,
-	.about,
-	.project{
-		margin-bottom: 45px;
-	}
-
-	.slider-left,
-	.slider-right {
-		display: none;
-	}
-
-	.industry-slider-box {
-		max-width: 100%;
-	}
-
-	.about-btm {
-		margin-bottom: 20px;
-
-		img {
-			width: 100%;
-		}
-	}
-}
-
-//**** MAX-WIDTH 485 ****//
-
-@media (max-width: 485px) {
-
-	.back-orange {
-
-		h3 {
-			font-size: 26px;
-		}
-	}
-}
