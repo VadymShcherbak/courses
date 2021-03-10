@@ -2111,6 +2111,7 @@ a {
 
 .blog {
   background: #E7EFF1;
+  margin-bottom: 95px;
 }
 
 .blog-wrapper {
@@ -2181,6 +2182,39 @@ a {
   background-size: cover;
 }
 
+.consulting {
+  margin-bottom: 75px;
+}
+.consulting h3 {
+  margin-bottom: 30px;
+}
+
+.consulting-inner {
+  display: flex;
+  align-items: center;
+  border: 1px solid #E1EAEC;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+.consulting-inner img {
+  margin-right: 42px;
+}
+
+.consulting-col {
+  margin-bottom: 20px;
+}
+
+.consulting-text h5 {
+  margin-bottom: 10px;
+  line-height: 1;
+}
+.consulting-text p {
+  line-height: 1.2;
+  color: #343a3b;
+}
+
 @media (max-width: 1160px) {
   .blog-inner {
     max-width: initial;
@@ -2247,7 +2281,9 @@ a {
 
   .industry,
 .project,
-.steps {
+.steps,
+.blog,
+.consulting {
     margin-bottom: 45px;
   }
 
@@ -2292,7 +2328,8 @@ a {
     margin-bottom: 20px;
   }
 
-  .blog-inner {
+  .blog-inner,
+.consulting {
     padding-top: 45px;
     padding-bottom: 45px;
   }
@@ -2311,6 +2348,14 @@ a {
 
   .blog-right {
     display: none;
+  }
+}
+@media (max-width: 372px) {
+  .consulting-inner {
+    flex-wrap: wrap;
+  }
+  .consulting-inner img {
+    margin-bottom: 10px;
   }
 }
 

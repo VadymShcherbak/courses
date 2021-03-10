@@ -90,7 +90,9 @@
 
 	.industry,
 	.project,
-	.steps {
+	.steps,
+	.blog,
+	.consulting {
 		margin-bottom: 45px;
 	}
 
@@ -140,11 +142,10 @@
 		margin-bottom: 20px;
 	}
 
-	.blog-inner {
+	.blog-inner,
+	.consulting {
 		padding-top: 45px;
 		padding-bottom: 45px;
-
-
 	}
 
 	.blog-item {
@@ -172,5 +173,18 @@
 
 	.blog-right {
 		display: none;
+	}
+}
+
+//**** MAX-WIDTH  ****//
+
+@media (max-width: 372px) {
+
+	.consulting-inner {
+		flex-wrap: wrap;
+
+		img {
+			margin-bottom: 10px;
+		}
 	}
 }
