@@ -575,13 +575,22 @@ a {
 }
 
 .clients-row-btm {
-	margin-bottom: 55px;
+	margin-bottom: 35px;
 }
 
-.clients-text {
+.clients-col {
+	margin-bottom: 20px;
 
 	p {
 		margin-bottom: 35px;
+	}
+}
+
+.clients-text-top {
+	padding-right: 65px;
+
+	p {
+		margin-top: -8px;
 	}
 }
 
@@ -616,12 +625,15 @@ a {
 }
 
 .client-circle {
-	width: 15px;
-	height: 15px;
-	border: 1px solid #fff;
-	border-radius: 50%;
-}
+	padding: 3px;
 
+	&.active {
+
+		i {
+			color: $button-bg-color;
+		}
+	}
+}
 
 @import './media.scss';
 

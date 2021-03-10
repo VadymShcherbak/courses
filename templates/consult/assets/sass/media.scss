@@ -25,6 +25,10 @@
 			margin-bottom: 10px;
 		}
 	}
+
+	.clients-text-top {
+		padding-right: 0;
+	}
 }
 
 //**** MAX-WIDTH 991px ****//
@@ -77,9 +81,13 @@
 	}
 
 	.industry,
-	.about,
-	.project{
+	.project,
+	.steps {
 		margin-bottom: 45px;
+	}
+
+	.about {
+		margin-bottom: 25px;
 	}
 
 	.slider-left,
@@ -96,6 +104,27 @@
 
 		img {
 			width: 100%;
+		}
+	}
+
+	.clients-col {
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+	.clients-border {
+		display: none;
+	}
+
+	.clients {
+		padding-top: 45px;
+		padding-bottom: 45px;
+
+		.clients-row-btm,
+		h3 {
+			margin-bottom: 20px;
 		}
 	}
 }
