@@ -116,7 +116,7 @@ a {
 
 .color-scheme-light {
 
-	h1,h2,h3,h4,h5,h6,i {
+	h1,h2,h3,h4,h5,h6,i,a {
 		color: #FFF;
 	}
 	
@@ -626,13 +626,108 @@ a {
 
 .client-circle {
 	padding: 3px;
+	cursor: pointer;
 
-	&.active {
+	i {
+		transition: color .4s ease;
+	}
+
+	&.active,
+	&:hover {
 
 		i {
 			color: $button-bg-color;
 		}
 	}
+}
+
+// ------------------------------------------------------------------------------------------------
+// BLOG
+// ------------------------------------------------------------------------------------------------
+
+.blog {
+	background: #E7EFF1;
+}
+
+.blog-wrapper {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.blog-inner {
+	max-width: 516px;
+	padding-top: 95px;
+	padding-bottom: 95px;
+	margin-right: 40px;
+}
+
+.blog-top {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 47px;
+}
+
+.blog-title {
+	margin-right: 15px;
+	
+	h3 {
+		margin-bottom: 0;
+	}
+}
+
+.blog-item {
+
+	&:not(:last-child) {
+		margin-bottom: 67px;
+	}
+}
+
+.blog-tab {
+	display: flex;
+	align-items: center;
+
+	li {
+
+		&.active {
+
+			a {
+				border-color: $orange;
+			}
+		}
+
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
+
+	a {
+		display: inline-block;
+		min-width: 140px;
+		padding: 8px 20px;
+		font-size: 12px;
+		text-transform: uppercase;
+		text-align: center;
+		border: 2px solid #989FA0;
+		border-radius: 20px;
+		color: #606668;
+	}
+}
+
+.blog-date {
+	font-size: 15px;
+	color: $title-color;
+	margin-bottom: 5px;
+}
+
+.date-color {
+	color: $button-bg-color;
+}
+
+.blog-right {
+	min-height: 809px;
+	background-image: url(img/blog-foto.png);
+	background-size: cover;
 }
 
 @import './media.scss';

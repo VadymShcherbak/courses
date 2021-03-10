@@ -2,6 +2,14 @@
 // MEDIA
 // ------------------------------------------------------------------------------------------------
 
+@media (max-width: 1160px) {
+
+	.blog-inner {
+		max-width: initial;
+		margin-right: 0;
+	}
+}
+
 @media (max-width: 1024px) {
 
 	.main-menu {
@@ -127,6 +135,28 @@
 			margin-bottom: 20px;
 		}
 	}
+
+	.blog-top {
+		margin-bottom: 20px;
+	}
+
+	.blog-inner {
+		padding-top: 45px;
+		padding-bottom: 45px;
+
+
+	}
+
+	.blog-item {
+
+		h5 {
+			margin-bottom: 5px;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 25px;
+		}
+	}
 }
 
 //**** MAX-WIDTH 485 ****//
@@ -138,5 +168,9 @@
 		h3 {
 			font-size: 26px;
 		}
+	}
+
+	.blog-right {
+		display: none;
 	}
 }
