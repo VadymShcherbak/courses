@@ -162,6 +162,21 @@
 	.vision-btn-top {
 		margin-top: 0;
 	}
+
+	.support-ind {
+
+		.row {
+
+			> div {
+				margin-bottom: 35px;
+
+				&:nth-last-child(1),
+				&:nth-last-child(2) {
+					margin-bottom: 35px;
+					}
+			}
+		}
+	}
 }
 
 //**** MAX-WIDTH 768px ****//
