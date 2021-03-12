@@ -82,6 +82,14 @@ a {
 	transition: all .4s ease;
 }
 
+form,
+input,
+textarea,
+select {
+	font-family: inherit;
+	color: inherit;
+}
+
 // ------------------------------------------
 // MODULS
 // ------------------------------------------
@@ -103,6 +111,7 @@ a {
 
 	&.button-large {
 		padding: 17px 40px;
+		color: #fff;
 	}
 
 	&:hover {
@@ -116,12 +125,12 @@ a {
 
 .color-scheme-light {
 
-	h1,h2,h3,h4,h5,h6,i,a {
+	h1,h2,h3,h4,h5,h6,i {
 		color: #FFF;
 	}
 	
-	p, ul, span {
-		color: rgb(255, 255, 255, .7);
+	p, ul, a, span {
+		color: rgb(255, 255, 255, .5);
 	}
 }
 
@@ -605,6 +614,7 @@ a {
 	display: flex;
 	align-items: center;
 	margin-bottom: 20px;
+	cursor: pointer;
 
 	img {
 		opacity: .6;
@@ -653,12 +663,13 @@ a {
 .blog-wrapper {
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 }
 
 .blog-inner {
 	max-width: 516px;
-	padding-top: 95px;
-	padding-bottom: 95px;
+	padding-top: 45px;
+	padding-bottom: 45px;
 	margin-right: 40px;
 }
 
@@ -690,6 +701,7 @@ a {
 
 	li {
 
+		&:hover,
 		&.active {
 
 			a {
@@ -771,6 +783,81 @@ a {
 	p {
 		line-height: 1.2;
 		color: $title-color;
+	}
+}
+
+// ------------------------------------------------------------------------------------------------
+// MAIN-FOOTER
+// ------------------------------------------------------------------------------------------------
+
+.main-footer {
+	background: rgba(38, 40, 41, 1);
+	padding-top: 95px;
+	padding-bottom: 56px;
+}
+
+.main-footer-row {
+	padding-bottom: 85px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #323334;
+}
+
+.main-footer-col {
+	padding-right: 40px;
+
+	h4 {
+		margin-bottom: 33px;
+	}
+
+	p {
+		max-width: 394px;
+		margin-bottom: 42px;
+	}
+
+
+}
+
+.newsletter-form {
+	display: flex;
+
+	input[type=text] {
+		width: 100%;
+		height: 52px;
+		padding-left: 35px;
+		padding-right: 80px;
+		border: none;
+		border-radius: 50px;
+		font-size: 13px;
+		text-transform: uppercase;
+		background-color: rgba(255, 255, 255, 0.05);
+	}
+
+	input[type=submit] {
+		border: none;
+		cursor: pointer;
+		margin-left: -60px;
+		transition: all .4s ease;
+	}
+}
+
+.info-list {
+
+	li {
+		&:hover {
+
+			a {
+				color: $orange;
+			}
+		}
+	}
+
+	a {
+		display: block;
+		font-size: 13px;
+		line-height: 1;
+		text-transform: uppercase;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 }
 

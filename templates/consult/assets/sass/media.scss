@@ -58,6 +58,14 @@
 		margin-bottom: 45px;
 	}
 
+	.about-btm {
+		margin-bottom: 20px;
+
+		img {
+			width: 100%;
+		}
+	}
+
 	.steps {
 		margin-top: 0;
 		padding-top: 60px;
@@ -77,6 +85,50 @@
 
 	.steps-number {
 		margin-bottom: 5px;
+	}
+
+	.main-footer {
+		padding-top: 45px;
+		padding-bottom: 45px;
+
+		.row {
+
+			> div {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.main-footer-row {
+		padding-bottom: 25px;
+
+		h4 {
+			margin-bottom: 10px ;
+		}
+	}
+
+	.newsletter-form {
+
+		input[type=text] {
+			width: 500px;
+		}
+	}
+
+	.main-footer-col {
+		order: 4;
+
+		p {
+			margin-bottom: 25px;
+			max-width: none;
+		}
+	}
+
+	.info-list {
+
+		a {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
 	}
 }
 
@@ -109,14 +161,6 @@
 		max-width: 100%;
 	}
 
-	.about-btm {
-		margin-bottom: 20px;
-
-		img {
-			width: 100%;
-		}
-	}
-
 	.clients-col {
 
 		p {
@@ -140,12 +184,6 @@
 
 	.blog-top {
 		margin-bottom: 20px;
-	}
-
-	.blog-inner,
-	.consulting {
-		padding-top: 45px;
-		padding-bottom: 45px;
 	}
 
 	.blog-item {
@@ -173,6 +211,21 @@
 
 	.blog-right {
 		display: none;
+	}
+
+	.newsletter-form {
+
+		input[type=text] {
+			height: 35px;
+			padding-left: 10px;
+			padding-right: 65px;
+			width: 100%;
+		}
+
+		input[type=submit] {
+			height: 35px;
+			padding: 10px 15px;
+		}
 	}
 }
 
