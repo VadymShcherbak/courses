@@ -44,6 +44,12 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 20px;
 }
 
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-size: 36px;
+	font-weight: 300;
+}
+
 h3 {
 	font-size: 32px;
 }
@@ -112,6 +118,10 @@ select {
 	&.button-large {
 		padding: 17px 40px;
 		color: #fff;
+	}
+
+	&.btn-long {
+		padding: 15px 45px;
 	}
 
 	&:hover {
@@ -405,11 +415,16 @@ select {
 .about-excellence {
 	display: flex;
 	justify-content: center;
+	color: #fff;
 	background-color: #03B6E7;
 	border: 6px solid #fff;
 	padding: 20px;
 	margin-top: -20%;
 	box-shadow: 0px 9px 16px 0px rgba(154, 154, 154, 0.3);
+
+	span {
+		font-size: 75px;
+	}
 }
 
 .about-medal {
@@ -421,10 +436,6 @@ select {
 	padding-bottom: 20px;
 	color: #fff;
 	border: 1px solid #35C5EC;
-
-	span {
-		font-size: 75px;
-	}
 }
 
 .medal-year {
@@ -444,7 +455,7 @@ select {
 	margin-bottom: 95px;
 }
 
-.steps-wrapper {
+.infobox-wrapper {
 	margin-bottom: 30px;
 
 	img {
@@ -456,7 +467,7 @@ select {
 	}
 }
 
-.steps-number {
+.infobox-number {
 	font-size: 20px;
 	color: $button-bg-color;
 	margin-bottom: 15px;
@@ -565,7 +576,7 @@ select {
 	@include absolute;
 }
 
-.project-footer {
+.button-bottom {
 	text-align: center;
 }
 
@@ -860,6 +871,120 @@ select {
 		padding-bottom: 10px;
 	}
 }
+
+// ------------------------------------------------------------------------------------------------
+// SECTION-TOP PAGE 2
+// ------------------------------------------------------------------------------------------------
+
+.section-top {
+	display: flex;
+	align-items: center;
+	min-height: 295px;
+	background: url(img/About-us/background-about.jpg)center no-repeat;
+	margin-bottom: 95px;
+}
+
+.section-top-head {
+	display: flex;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	h1 {
+		margin-left: -35px;
+		margin-bottom: 0;
+	}
+}
+
+.section-top-circle {
+	width: 54px;
+	height: 54px;
+	border-radius: 50%;
+	background-color: $orange;
+}
+
+// ------------------------------------------------------------------------------------------------
+// WEDO PAGE 2
+// ------------------------------------------------------------------------------------------------
+
+.wedo-left {
+
+	p {
+		max-width: 500px;
+	}
+}
+
+.wedo-right {
+	display: flex;
+
+	.about-excellence {
+		flex-direction: column;
+		text-align: center;
+		margin-top: -15%;
+
+		.about-medal {
+			margin-bottom: 58px;
+		}
+
+		.wedo-number {
+			font-size: 48px;
+		}
+	}
+}
+
+.wedo-text {
+	max-width: 285px;
+	margin-right: 41px;
+}
+
+// ------------------------------------------------------------------------------------------------
+// CORE PAGE 2
+// ------------------------------------------------------------------------------------------------
+
+.core {
+	background: #e7eff1;
+	padding-top: 95px;
+	padding-bottom: 65px;
+	margin-top: -90px;
+	margin-bottom: 95px;
+
+	h3 {
+		margin-bottom: 34px;
+	}
+}
+
+// ------------------------------------------------------------------------------------------------
+// VISION PAGE 2
+// ------------------------------------------------------------------------------------------------
+
+.vision {
+
+	.row {
+		margin-bottom: 40px;
+		border-bottom: 1px solid #DBE4E4;
+	}
+}
+
+.vision-col {
+	margin-bottom: 30px;
+}
+
+.vision-img {
+	margin-bottom: 45px;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		transition: all .4s ease;
+	}
+
+	&:hover {
+
+		img {
+			transform: scale(1.2)
+		}
+	}
+}
+
 
 @import './media.scss';
 
