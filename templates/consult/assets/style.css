@@ -2352,8 +2352,11 @@ select {
   margin-bottom: 34px;
 }
 
+.vision {
+  margin-bottom: 95px;
+}
 .vision .row {
-  margin-bottom: 40px;
+  padding-bottom: 95px;
   border-bottom: 1px solid #DBE4E4;
 }
 
@@ -2371,6 +2374,11 @@ select {
 }
 .vision-img:hover img {
   transform: scale(1.2);
+}
+
+.vision-btn-top {
+  text-align: center;
+  margin-top: 42px;
 }
 
 @media (max-width: 1160px) {
@@ -2483,6 +2491,14 @@ select {
   .core h3 {
     margin-bottom: 20px;
   }
+
+  .vision .row {
+    padding-bottom: 45px;
+  }
+
+  .vision-btn-top {
+    margin-top: 0;
+  }
 }
 @media (max-width: 768px) {
   .header-top {
@@ -2495,7 +2511,8 @@ select {
 .blog,
 .consulting,
 .section-top,
-.core {
+.core,
+.vision {
     margin-bottom: 45px;
   }
 

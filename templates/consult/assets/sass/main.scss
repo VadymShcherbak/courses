@@ -957,9 +957,10 @@ select {
 // ------------------------------------------------------------------------------------------------
 
 .vision {
+	margin-bottom: 95px;
 
 	.row {
-		margin-bottom: 40px;
+		padding-bottom: 95px;
 		border-bottom: 1px solid #DBE4E4;
 	}
 }
@@ -983,6 +984,11 @@ select {
 			transform: scale(1.2)
 		}
 	}
+}
+
+.vision-btn-top {
+	text-align: center;
+	margin-top: 42px;
 }
 
 

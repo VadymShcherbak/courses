@@ -150,6 +150,17 @@
 			margin-bottom: 20px;
 		}
 	}
+
+	.vision {
+
+		.row {
+			padding-bottom: 45px;
+		}
+	}
+
+	.vision-btn-top {
+		margin-top: 0;
+	}
 }
 
 //**** MAX-WIDTH 768px ****//
@@ -166,7 +177,8 @@
 	.blog,
 	.consulting,
 	.section-top,
-	.core {
+	.core,
+	.vision {
 		margin-bottom: 45px;
 	}
 
