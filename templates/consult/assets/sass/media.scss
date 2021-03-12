@@ -19,6 +19,7 @@
 	.main-burger {
 		display: block;
 		margin-left: 25px;
+		margin-right: -15px;
 	}
 
 	.about-left {
@@ -178,7 +179,8 @@
 	.consulting,
 	.section-top,
 	.core,
-	.vision {
+	.vision,
+	.management {
 		margin-bottom: 45px;
 	}
 
@@ -248,11 +250,33 @@
 			margin-bottom: 20px;
 		}
 	}
+
+	.management {
+
+		h3 {
+			margin-bottom: 20px;
+		}
+	}
+
+	.infobox-hor-inner {
+
+		p {
+			margin-bottom: 15px;
+		}
+	}
+
+	.management-btn-top {
+		margin-top: 0;
+	}
 }
 
 //**** MAX-WIDTH 485 ****//
 
 @media (max-width: 485px) {
+
+	.button {
+		font-size: 10px;
+	}
 
 	.back-orange {
 
@@ -263,6 +287,13 @@
 
 	.blog-right {
 		display: none;
+	}
+
+	.blog-title {
+
+		h3 {
+			margin-bottom: 10px;
+		}
 	}
 
 	.newsletter-form {
@@ -278,6 +309,26 @@
 			height: 35px;
 			padding: 10px 15px;
 		}
+	}
+
+	.blog-tab {
+
+		a {
+			font-size: 10px;
+		}
+	}
+
+	.infobox-hor {
+		flex-wrap: wrap;
+	}
+
+	.infobox-hor-img {
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+
+	.infobox-hor-prof {
+		margin-bottom: 10px;
 	}
 }
 
