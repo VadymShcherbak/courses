@@ -2495,6 +2495,21 @@ select {
   box-shadow: 0 0 65px rgba(210, 222, 225, 0.8);
 }
 
+.ind-projects {
+  background: #E7EFF1;
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+.ind-projects .row {
+  margin-bottom: 15px;
+}
+.ind-projects .row > div {
+  margin-bottom: 30px;
+}
+.ind-projects h3 {
+  margin-bottom: 35px;
+}
+
 @media (max-width: 1160px) {
   .blog-inner {
     max-width: initial;
@@ -2711,6 +2726,11 @@ select {
 
   .management-btn-top {
     margin-top: 0;
+  }
+
+  .ind-projects {
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 }
 @media (max-width: 485px) {
