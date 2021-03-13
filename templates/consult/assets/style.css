@@ -1975,13 +1975,15 @@ select {
 .project {
   margin-bottom: 95px;
 }
-
-.project-btm {
-  margin-bottom: 15px;
+.project .row > div {
+  margin-bottom: 30px;
+}
+.project .row > div .col-spacing-30 {
+  margin-bottom: -30px;
 }
 
-.project-col-btm {
-  margin-bottom: 30px;
+.project-row-btm {
+  margin-bottom: 15px;
 }
 
 .project-wrapper {
@@ -2448,17 +2450,21 @@ select {
   margin-top: 34px;
 }
 
+.support-ind {
+  margin-bottom: 95px;
+}
 .support-ind h3 {
   margin-bottom: 48px;
 }
 .support-ind .row {
-  margin-bottom: 96px;
+  margin-bottom: -90px;
 }
 .support-ind .row > div {
   margin-bottom: 90px;
 }
-.support-ind .row > div:nth-last-child(1), .support-ind .row > div:nth-last-child(2) {
-  margin-bottom: 0;
+
+.support-btn-marg-top {
+  margin-top: 95px;
 }
 
 .support-img {
@@ -2480,6 +2486,13 @@ select {
 }
 .support-box p {
   margin-bottom: 0;
+}
+
+.support-img {
+  transition: box-shadow 0.4s ease;
+}
+.support-img:hover {
+  box-shadow: 0 0 65px rgba(210, 222, 225, 0.8);
 }
 
 @media (max-width: 1160px) {
@@ -2608,6 +2621,10 @@ select {
   .support-ind .row > div:nth-last-child(1), .support-ind .row > div:nth-last-child(2) {
     margin-bottom: 35px;
   }
+
+  .project-row-btm {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 768px) {
   .header-top {
@@ -2622,7 +2639,8 @@ select {
 .section-top,
 .core,
 .vision,
-.management {
+.management,
+.support-ind {
     margin-bottom: 45px;
   }
 

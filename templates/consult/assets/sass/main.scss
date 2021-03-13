@@ -485,14 +485,21 @@ select {
 
 .project {
 	margin-bottom: 95px;
+
+	.row {
+
+		> div {
+			margin-bottom: 30px;
+
+			.col-spacing-30 {
+				margin-bottom: -30px;
+			}
+		} 
+	}
 }
 
-.project-btm {
+.project-row-btm {
 	margin-bottom: 15px;
-}
-
-.project-col-btm {
-	margin-bottom: 30px;
 }
 
 .project-wrapper {
@@ -1081,23 +1088,27 @@ select {
 // ------------------------------------------------------------------------------------------------
 
 .support-ind {
+	margin-bottom: 95px;
 
 	h3 {
 		margin-bottom: 48px;
 	}
 
 	.row {
-		margin-bottom: 96px;
+		margin-bottom: -90px;
 
 		> div {
 			margin-bottom: 90px;
-
-		&:nth-last-child(1),
-		&:nth-last-child(2) {
-			margin-bottom: 0;
-			}
 		}
 	}
+
+	// .row {
+	// 	margin-bottom: 96px;
+	// }
+}
+
+.support-btn-marg-top {
+	margin-top: 95px;
 }
 
 .support-img {
@@ -1120,6 +1131,14 @@ select {
 
 	p {
 		margin-bottom: 0;
+	}
+}
+
+.support-img {
+	transition: box-shadow .4s ease;
+
+	&:hover {
+		box-shadow: 0 0 65px rgba(210, 222, 225, 80%);
 	}
 }
 
