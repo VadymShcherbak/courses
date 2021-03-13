@@ -2288,6 +2288,9 @@ textarea {
 .newsletter-form {
   display: flex;
 }
+.newsletter-form ::placeholder {
+  color: #898e8f;
+}
 .newsletter-form input[type=text] {
   width: 100%;
   height: 52px;
@@ -2297,7 +2300,7 @@ textarea {
   border-radius: 50px;
   font-size: 13px;
   text-transform: uppercase;
-  color: inherit;
+  color: #898e8f;
   background-color: rgba(255, 255, 255, 0.05);
 }
 .newsletter-form input[type=submit] {
