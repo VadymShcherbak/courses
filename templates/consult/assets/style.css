@@ -1577,11 +1577,10 @@ table {
   box-sizing: border-box;
 }
 
-input:focus {
-  outline: 0;
-}
-
-button:focus {
+input:focus,
+button:focus,
+select:focus,
+textarea:focus {
   outline: 0;
 }
 
@@ -1653,7 +1652,22 @@ input,
 textarea,
 select {
   font-family: inherit;
-  color: inherit;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  height: 29px;
+  border: none;
+  border-bottom: 1px solid #CDDBDE;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #343a3b;
+}
+
+textarea {
+  height: 175px;
 }
 
 .container {
@@ -1692,6 +1706,10 @@ select {
 }
 .color-scheme-light p, .color-scheme-light ul, .color-scheme-light a, .color-scheme-light span {
   color: rgba(255, 255, 255, 0.5);
+}
+
+::placeholder {
+  color: #343a3b;
 }
 
 .header-top {
@@ -2279,6 +2297,7 @@ select {
   border-radius: 50px;
   font-size: 13px;
   text-transform: uppercase;
+  color: inherit;
   background-color: rgba(255, 255, 255, 0.05);
 }
 .newsletter-form input[type=submit] {
@@ -2508,6 +2527,17 @@ select {
 }
 .ind-projects h3 {
   margin-bottom: 35px;
+}
+
+.connect {
+  margin-bottom: 95px;
+}
+.connect h3 {
+  margin-bottom: 53px;
+}
+
+.form-spacing {
+  margin-bottom: 45px;
 }
 
 @media (max-width: 1160px) {
