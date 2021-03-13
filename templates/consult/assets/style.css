@@ -2529,6 +2529,23 @@ textarea {
   margin-bottom: 35px;
 }
 
+.services {
+  margin-bottom: 95px;
+}
+.services h3 {
+  margin-bottom: 45px;
+}
+
+.services-infobox {
+  margin-bottom: 78px;
+}
+.services-infobox img {
+  margin-bottom: 20px;
+}
+.services-infobox h5 {
+  margin-bottom: 10px;
+}
+
 .connect {
   margin-bottom: 95px;
 }
@@ -2568,6 +2585,10 @@ textarea {
 
   .clients-text-top {
     padding-right: 0;
+  }
+
+  .main-footer-row {
+    padding-bottom: 50px;
   }
 }
 @media (max-width: 991px) {
@@ -2670,6 +2691,13 @@ textarea {
   .project-row-btm {
     margin-bottom: 30px;
   }
+
+  .services-infobox {
+    margin-bottom: 30px;
+  }
+  .services-infobox h5 {
+    margin-bottom: 5px;
+  }
 }
 @media (max-width: 768px) {
   .header-top {
@@ -2685,7 +2713,9 @@ textarea {
 .core,
 .vision,
 .management,
-.support-ind {
+.support-ind,
+.connect,
+.services {
     margin-bottom: 45px;
   }
 
@@ -2761,6 +2791,10 @@ textarea {
   .ind-projects {
     padding-top: 45px;
     padding-bottom: 45px;
+  }
+
+  .services h3 {
+    margin-bottom: 35px;
   }
 }
 @media (max-width: 485px) {

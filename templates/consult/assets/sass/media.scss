@@ -38,6 +38,10 @@
 	.clients-text-top {
 		padding-right: 0;
 	}
+
+	.main-footer-row {
+		padding-bottom: 50px;
+	}
 }
 
 //**** MAX-WIDTH 991px ****//
@@ -181,6 +185,14 @@
 	.project-row-btm {
 		margin-bottom: 30px;
 	}
+
+	.services-infobox {
+		margin-bottom: 30px;
+
+		h5 {
+			margin-bottom: 5px;
+		}
+	}
 }
 
 //**** MAX-WIDTH 768px ****//
@@ -200,7 +212,9 @@
 	.core,
 	.vision,
 	.management,
-	.support-ind {
+	.support-ind,
+	.connect,
+	.services {
 		margin-bottom: 45px;
 	}
 
@@ -296,6 +310,13 @@
 	.ind-projects {
 		padding-top: 45px;
 		padding-bottom: 45px;
+	}
+
+	.services {
+
+		h3 {
+			margin-bottom: 35px;
+		}
 	}
 }
 
