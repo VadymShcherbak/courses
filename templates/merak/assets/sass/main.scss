@@ -1,0 +1,112 @@
+@import './bootstrap-grid.scss';
+@import './reset.scss';
+@import './base-style.scss';
+
+// ------------------------------------------
+// MIXIN
+// ------------------------------------------
+
+@mixin absolute {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+
+// ------------------------------------------
+// MODULES
+// ------------------------------------------
+
+.button {
+	display: inline-block;
+	padding: 17px 40px;
+	border-radius: 35px;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+	}
+
+.color-scheme-light {
+	
+	h1,h2,h3,h4,h5,h6,i {
+		color: #FFF;
+	}
+	
+	p, ul {
+		color: rgba(255,255,255,.8);
+	}
+}
+
+// ------------------------------------------------------------------------------------------------
+// MAIN-HEADER
+// ------------------------------------------------------------------------------------------------
+
+//**** HEADER-TOP ****//
+
+.header-top {
+	background: #da8a67;
+}
+
+.header-top-inner {
+	display: flex;
+	height: 40px;
+
+	.color-scheme-light & {
+
+		div {
+			color: #fff;
+		}
+	}
+}
+
+.header-col  {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.header-top-contact,
+.header-col-right-text,
+.usd {
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.header-top-contact {
+
+	&:not(:last-child) {
+		margin-right: 20px;
+	}
+}
+
+.header-col-right {
+	justify-content: flex-end;
+}
+
+.header-col-right-text {
+	margin-right: 10px;
+}
+
+.header-col-right-item {
+	display: flex;
+	margin-right: -10px;
+
+	i {
+		color: #E7B29B;
+	}
+}
+
+.usa {
+	text-transform: uppercase;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-left: 1px solid #DE9574;
+}
+
+
+@import './media.scss';
+
+
