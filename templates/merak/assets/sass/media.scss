@@ -1,8 +1,12 @@
 // ------------------------------------------
-// MAX-WIDTH 990px
+// MAX-WIDTH 990 PX
 // ------------------------------------------
 
 @media (max-width: 990px) {
+
+	.main-header {
+		margin-bottom: 0;
+	}
 
 	.header-col-center,
 	.header-col-right,
@@ -12,5 +16,65 @@
 
 	.main-burger {
 		display: block;
+	}
+}
+
+// ------------------------------------------
+// MAX-WIDTH 768 PX
+// ------------------------------------------
+
+@media (max-width: 768px) {
+
+	h1 {
+		font-size: 32px;
+	}
+
+	.banner-large-img {
+		
+		img {
+			width: 100%;
+		}
+	}
+
+	.banner-large-inner {
+		padding: 20px;
+	}
+
+	.banner-large-btn {
+		margin-bottom: 30px;
+	}
+}
+
+// ------------------------------------------
+// MAX-WIDTH 595 PX
+// ------------------------------------------
+
+@media (max-width: 595px) {
+
+	.header-top {
+		display: none;
+	}
+
+
+	.button {
+		padding: 5px 20px;
+		font-size: 10px;
+	}
+
+	h1 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	.banner-large-inner {
+		max-width: none;
+
+		p {
+			display: none;
+		}
+	}
+
+	.banner-large-btn {
+		margin-bottom: 15px;
 	}
 }
