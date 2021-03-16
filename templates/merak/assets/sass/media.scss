@@ -1,0 +1,16 @@
+// ------------------------------------------
+// MAX-WIDTH 990px
+// ------------------------------------------
+
+@media (max-width: 990px) {
+
+	.header-col-center,
+	.header-col-right,
+	.header-bottom {
+		display: none;
+	}
+
+	.main-burger {
+		display: block;
+	}
+}

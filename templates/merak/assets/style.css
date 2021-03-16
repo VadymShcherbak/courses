@@ -1517,10 +1517,6 @@ html {
   }
 }
 /*# sourceMappingURL=bootstrap-grid.css.map */
-/* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1537,18 +1533,20 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body {
+html {
   line-height: 1;
 }
 
@@ -1556,32 +1554,59 @@ ol, ul {
   list-style: none;
 }
 
-blockquote, q {
+caption, th, td {
+  vertical-align: middle;
+  text-align: left;
+}
+
+q, blockquote {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+a img {
+  border: none;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
 }
 
-input:focus,
-button:focus,
-select:focus,
-textarea:focus {
-  outline: 0;
+a, button, input {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  color: inherit;
+  font: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
 }
 
 body {
@@ -1639,7 +1664,7 @@ img {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #DA8A67;
   transition: all 0.4s ease;
 }
 
@@ -1656,20 +1681,12 @@ u {
 }
 
 small {
-  font-size: smaller;
-}
-
-table {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-}
-
-thead {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 80%;
 }
 
 th {
   font-weight: 700;
-  border-right: 1px solid rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(16, 16, 16, 0.05);
 }
 
 tr:not(:last-child) {
@@ -1677,25 +1694,72 @@ tr:not(:last-child) {
 }
 
 td {
-  border-right: 1px solid rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(16, 16, 16, 0.05);
   padding: 5px;
 }
 
-input[type=text] {
-  height: 40px;
-  min-width: 580px;
-  padding-left: 30px;
-  border: 2px solid #F5F5F5;
+ul {
+  list-style: disc;
+  padding-left: 40px;
 }
 
-button {
-  border: none;
-  background: transparent;
-  cursor: pointer;
+ol {
+  list-style: decimal;
+  padding-left: 40px;
 }
 
+li {
+  margin-bottom: 10px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=url],
+input[type=date],
+input[type=time],
+select,
+textarea {
+  border: 2px solid rgba(16, 16, 16, 0.05);
+  outline: none;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=url],
+input[type=date],
+input[type=time],
 select {
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+textarea {
+  height: 120px;
+  padding: 20px;
+}
+
+::placeholder {
+  color: rgba(16, 16, 16, 0.5);
+}
+
+input[type=submit],
+input[type=button],
+button,
+.button {
+  padding: 14px 25px;
   border: none;
+  color: #fff;
+  background-color: #333333;
+  cursor: pointer;
+  outline: none;
 }
 
 .container {
@@ -1718,6 +1782,10 @@ select {
 }
 .color-scheme-light p, .color-scheme-light ul {
   color: rgba(255, 255, 255, 0.8);
+}
+
+.colortext {
+  color: #DA8A67;
 }
 
 .header-top {
@@ -1751,6 +1819,7 @@ select {
 .header-col-right {
   display: flex;
   justify-content: flex-end;
+  margin-left: 20px;
 }
 
 .header-col-right-text {
@@ -1782,7 +1851,13 @@ select {
 }
 
 .header-col-left {
-  padding-right: 20px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.header-col-center {
+  flex-basis: 580px;
+  flex-shrink: 1;
 }
 
 .header-md-item {
@@ -1795,28 +1870,65 @@ select {
 
 .header-md-form {
   position: relative;
+  display: flex;
+}
+.header-md-form input[type=text] {
+  padding-left: 40px;
+  padding-right: 140px;
 }
 .header-md-form button {
   position: absolute;
-  left: 5px;
+  left: 0;
   bottom: 0;
   top: 0;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  padding: 0 15px;
 }
 .header-md-form button i {
   color: #9A9A9A;
 }
-.header-md-form select {
+
+.form-srlect {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 20px;
-  border-top: 2px solid #F5F5F5;
-  border-bottom: 2px solid #F5F5F5;
+  right: 0;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.form-srlect i {
+  margin-left: 10px;
+}
+.form-srlect:before {
+  content: "";
+  width: 1px;
+  height: 14px;
+  background-color: rgba(16, 16, 16, 0.05);
+  margin-right: 20px;
 }
 
 .header-md-right {
-  width: 20px;
+  font-size: 20px;
   margin-right: 5px;
+}
+
+.main-burger {
+  display: none;
+  color: rgba(16, 16, 16, 0.9);
+  font-size: 30px;
+  line-height: 1;
+  padding: 15px;
+  margin-right: -15px;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+.main-burger:hover {
+  color: #DA8A67;
 }
 
 .header-bottom-inner {
@@ -1833,14 +1945,45 @@ select {
   width: 280px;
 }
 
+.left-menu {
+  padding-left: 0;
+  list-style: none;
+}
+.left-menu li {
+  margin-bottom: 0;
+}
+
 .main-menu {
   display: flex;
   align-items: center;
+  padding-left: 0;
+  list-style: none;
+}
+.main-menu li {
+  margin-bottom: 0;
 }
 .main-menu a {
   display: inline-block;
   padding: 14px;
+  color: inherit;
 }
 .main-menu i {
   margin-left: 5px;
+}
+
+.header-discount {
+  flex-grow: 1;
+  align-items: center;
+}
+
+@media (max-width: 990px) {
+  .header-col-center,
+.header-col-right,
+.header-bottom {
+    display: none;
+  }
+
+  .main-burger {
+    display: block;
+  }
 }
