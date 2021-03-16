@@ -240,11 +240,13 @@
 	background: #DA8A67;
 	padding: 20px;
 	width: 280px;
+	cursor: pointer;
 }
 
 .left-menu {
 	padding-left: 0;
 	list-style: none;
+	margin-left: -50px;
 
 	li {
 		margin-bottom: 0;
