@@ -1868,6 +1868,10 @@ button,
   margin-right: 20px;
 }
 
+.color-light {
+  color: #9F9F9F;
+}
+
 .header-md-form {
   position: relative;
   display: flex;
@@ -1960,12 +1964,29 @@ button,
   list-style: none;
 }
 .main-menu li {
+  position: relative;
   margin-bottom: 0;
+}
+.main-menu li:hover a:after {
+  opacity: 1;
+  visibility: visible;
 }
 .main-menu a {
   display: inline-block;
-  padding: 14px;
+  padding: 19px 14px;
   color: inherit;
+}
+.main-menu a:after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  height: 3px;
+  background-color: #da8a67;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
 }
 .main-menu i {
   margin-left: 5px;
