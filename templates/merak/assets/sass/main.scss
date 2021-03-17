@@ -636,6 +636,58 @@
 	background-color:  #eeeeee;
 }
 
+// ------------------------------------------------------------------------------------------------
+// CATEGORY
+// ------------------------------------------------------------------------------------------------
+
+.category {
+	background: #FBF3F0;
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+
+.banner-category {
+	position: relative;
+}
+
+.category-angle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 18px 30px;
+	display: flex;
+
+	i {
+		font-size: 32px;
+
+		&:first-child {
+			margin-right: 10px;
+			color: #AAAAAC;
+		}
+	}
+}
+
+.category-content {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 30px;
+	max-width: 275px;
+	background: #FBF3F0;
+}
+
+.category-inner {
+
+	.colortext {
+		margin-bottom: 27px;
+	}
+
+	.button {
+		background-color: #DA8A67;
+	}
+}
 
 
 @import './media.scss';

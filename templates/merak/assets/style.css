@@ -1762,6 +1762,9 @@ button,
   outline: none;
 }
 
+.button {
+  display: inline-block;
+}
 .button.banner-btn {
   background-color: #fff;
   color: rgba(16, 16, 16, 0.9);
@@ -2284,6 +2287,49 @@ button,
 
 .dc-grey {
   background-color: #eeeeee;
+}
+
+.category {
+  background: #FBF3F0;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.banner-category {
+  position: relative;
+}
+
+.category-angle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 18px 30px;
+  display: flex;
+}
+.category-angle i {
+  font-size: 32px;
+}
+.category-angle i:first-child {
+  margin-right: 10px;
+  color: #AAAAAC;
+}
+
+.category-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px;
+  max-width: 275px;
+  background: #FBF3F0;
+}
+
+.category-inner .colortext {
+  margin-bottom: 27px;
+}
+.category-inner .button {
+  background-color: #DA8A67;
 }
 
 @media (max-width: 990px) {
