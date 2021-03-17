@@ -473,6 +473,15 @@
 .products-header {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 40px;
+
+	h2 {
+		margin-bottom: 0;
+	}
+}
+
+.products-header-title {
+	margin-right: 20px;
 }
 
 .tab-menu {
@@ -560,6 +569,7 @@
 	}
 
 	.banner-btn {
+		white-space: nowrap;
 		padding: 9px 18px;
 
 		&:hover {

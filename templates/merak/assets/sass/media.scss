@@ -18,6 +18,29 @@
 	.main-burger {
 		display: block;
 	}
+
+	.casual {
+		margin-bottom: 40px;
+	}
+
+	.products-header {
+		margin-bottom: 15px;
+	}
+
+	.banner {
+		margin-bottom: 10px;
+	}
+
+	.row-spacing-50 {
+
+		> [class*='col-'] {
+			margin-bottom: 20px;
+		}
+	}
+
+	.product-content {
+		margin-bottom: 5px;
+	}
 }
 
 // ------------------------------------------
@@ -66,6 +89,10 @@
 	h1 {
 		font-size: 16px;
 		margin-bottom: 10px;
+	}
+
+	h2 {
+		font-size: 22px;
 	}
 
 	.banner-large-inner {

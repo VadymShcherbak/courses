@@ -2146,6 +2146,14 @@ button,
 .products-header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
+}
+.products-header h2 {
+  margin-bottom: 0;
+}
+
+.products-header-title {
+  margin-right: 20px;
 }
 
 .tab-menu {
@@ -2221,6 +2229,7 @@ button,
   margin-right: 10px;
 }
 .banner-img-hover-inner .banner-btn {
+  white-space: nowrap;
   padding: 9px 18px;
 }
 .banner-img-hover-inner .banner-btn:hover i {
@@ -2279,6 +2288,26 @@ button,
   .main-burger {
     display: block;
   }
+
+  .casual {
+    margin-bottom: 40px;
+  }
+
+  .products-header {
+    margin-bottom: 15px;
+  }
+
+  .banner {
+    margin-bottom: 10px;
+  }
+
+  .row-spacing-50 > [class*=col-] {
+    margin-bottom: 20px;
+  }
+
+  .product-content {
+    margin-bottom: 5px;
+  }
 }
 @media (max-width: 768px) {
   h1 {
@@ -2311,6 +2340,10 @@ button,
   h1 {
     font-size: 16px;
     margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 22px;
   }
 
   .banner-large-inner {
