@@ -2262,6 +2262,8 @@ button,
   display: block;
   width: 15px;
   height: 15px;
+  cursor: pointer;
+  margin-left: 5px;
 }
 
 .dc-green {
@@ -2269,8 +2271,19 @@ button,
 }
 
 .dc-pink {
-  margin-left: 5px;
   background-color: #ffc7c7;
+}
+
+.dc-dark-green {
+  background-color: #164f58;
+}
+
+.dc-dark-pink {
+  background-color: #ecc3db;
+}
+
+.dc-grey {
+  background-color: #eeeeee;
 }
 
 @media (max-width: 990px) {
