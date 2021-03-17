@@ -265,6 +265,7 @@
 		position: relative;
 		margin-bottom: 0;
 
+		&.active,
 		&:hover {
 
 			a {
@@ -361,6 +362,10 @@
 // CASUAL
 // ------------------------------------------------------------------------------------------------
 
+.casual {
+	margin-bottom: 85px;
+}
+
 .banner-large {
 	position: relative;
 }
@@ -378,78 +383,236 @@
 	padding: 40px;
 	max-width: 445px;
 
-	.button {
-		background-color: #fff;
-		color: $title-color;
-		font-size: 14px;
-		font-weight: 600;
-		margin-right: 10px;
+	.banner-btn {
 
 		&:hover {
 			color: #fff;
 			background-color: #DA8A67;
 		}
+	}
+}
+
+.banner-large-btn {
+	display: flex;
+	align-items: center;
+	margin-bottom: 90px;
+
+	.banner-btn {
+		margin-right: 10px;
+	}
+}
+
+.btn-square-green,
+.btn-square-red {
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+}
+
+.btn-square-green {
+	background-color: #A6B6A9;
+}
+
+.btn-square-red {
+	background-color: #D75A62;
+}
+
+.banner-large-num {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 40px;
+	display: flex;
+	align-items: center;
+	line-height: 1;
+	font-family: 'Spartan', sans-serif;
+
+	i {
+		font-size: 26px;
+
+		&:first-child {
+			margin-right: 5px;
+			color: rgba(255, 255, 255, 0.3);
+		}
+
+		&:last-child {
+			margin-left: 5px;
+			color: rgba(255, 255, 255, 0.7);
 		}
 	}
 
-	.banner-large-btn {
-		display: flex;
-		align-items: center;
-		margin-bottom: 90px;
+	span {
+		display: inline-block;
+		color: rgba(255, 255, 255, 0.2);
+		padding: 5px;
+
+		&.active {
+			font-size: 20px;
+			color: rgba(255, 255, 255, 0.7)
+		}
+	}
+}
+
+// ------------------------------------------------------------------------------------------------
+// PRODUCTS
+// ------------------------------------------------------------------------------------------------
+
+.products {
+	margin-bottom: 30px;
+}
+
+.row-spacing-50 {
+
+	> [class*='col-'] {
+		margin-bottom: 50px;
+	}
+}
+
+.products-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tab-menu {
+	margin-right: -15px;
+
+	li {
+		
+		&.active {
+
+			a {
+				color: $title-color;
+			}
+		}
 	}
 
-	.btn-square-green,
-	.btn-square-red {
-		display: block;
-		width: 30px;
-		height: 30px;
-		margin-left: 10px;
+	a {
+		padding: 0 20px;
+		font-weight: 500;
+		color: rgba(16, 16, 16, 0.7);
+
+		&:after {
+			left: 20px;
+			right: 20px;
+			height: 2px;
+		}
+	}
+}
+
+.banner {
+	position: relative;
+	margin-bottom: 20px;
+
+	.banner-link {
+
+		@include absolute;
+		z-index: 1;
 	}
 
-	.btn-square-green {
-		background-color: #A6B6A9;
+	&:hover {
+
+		.banner-img-hover {
+			opacity: 1;
+			visibility: visible;
+		}
 	}
-	
-	.btn-square-red {
-		background-color: #D75A62;
+}
+
+.banner-square {
+	width: 40px;
+	height: 37px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	color: $title-color;
+
+	&:hover {
+		color: #DA8A67;
+	}
+}
+
+.banner-img-hover {
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s ease;
+
+	@include absolute;
+}
+
+.banner-img-hover-inner {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+
+	a {
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
 	}
 
-	.banner-large-num {
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		padding: 40px;
-		display: flex;
-		align-items: center;
-		line-height: 1;
+	.banner-btn {
+		padding: 9px 18px;
+
+		&:hover {
+			
+			i {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
 
 		i {
-			font-size: 26px;
-
-			&:first-child {
-				margin-right: 5px;
-				color: rgba(255, 255, 255, 0.3);
-			}
-
-			&:last-child {
-				margin-left: 5px;
-				color: rgba(255, 255, 255, 0.7);
-			}
-		}
-
-		span {
-			font-family: 'Spartan', sans-serif;
-			display: inline-block;
-			color: rgba(255, 255, 255, 0.2);
-			padding: 5px;
-
-			&.active {
-				font-size: 20px;
-				color: rgba(255, 255, 255, 0.7)
-			}
+			opacity: 0;
+			visibility: hidden;
+			margin-left: 5px;
 		}
 	}
+}
+
+//**** PRODUCT-CONTENT ****//
+
+.product-content {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+
+	a {
+		color: #101010;
+	}
+
+	h6 {
+		margin-bottom: 0;
+	}
+}
+
+.dress-type {
+	display: flex;
+}
+
+.dress-color {
+	display: block;
+	width: 15px;
+	height: 15px;
+}
+
+.dc-green {
+	background-color:  #2a767a;
+}
+
+.dc-pink {
+	margin-left: 5px;
+	background-color: #ffc7c7;
+}
+
 
 
 @import './media.scss';
