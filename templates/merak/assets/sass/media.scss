@@ -36,7 +36,8 @@
 		}
 	}
 
-	.banner-large-inner {
+	.banner-large-inner,
+	.banner-large-num {
 		padding: 20px;
 	}
 
@@ -62,7 +63,7 @@
 	}
 
 	h1 {
-		font-size: 20px;
+		font-size: 16px;
 		margin-bottom: 10px;
 	}
 
@@ -72,9 +73,5 @@
 		p {
 			display: none;
 		}
-	}
-
-	.banner-large-btn {
-		margin-bottom: 15px;
 	}
 }

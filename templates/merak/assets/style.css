@@ -1826,12 +1826,15 @@ button,
   margin-right: -10px;
 }
 .header-col-right-item i {
+  font-size: 23px;
   color: #E7B29B;
-  margin-left: 2px;
+  margin-left: 5px;
 }
 
 .usa {
-  align-self: center;
+  display: flex;
+  align-items: center;
+  line-height: 1;
   text-transform: uppercase;
   padding-left: 10px;
   padding-right: 10px;
@@ -1902,7 +1905,7 @@ button,
   cursor: pointer;
 }
 .form-srlect i {
-  margin-left: 10px;
+  margin-left: 7px;
 }
 .form-srlect:before {
   content: "";
@@ -1950,6 +1953,9 @@ button,
   width: 280px;
   cursor: pointer;
 }
+.header-bottom-left i {
+  font-size: 20px;
+}
 
 .left-menu {
   padding-left: 0;
@@ -1975,7 +1981,8 @@ button,
   visibility: visible;
 }
 .main-menu a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding: 19px 14px;
   color: inherit;
 }
@@ -2090,15 +2097,24 @@ button,
 }
 
 .banner-large-num {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px;
+  display: flex;
+  align-items: center;
   line-height: 1;
 }
 .banner-large-num i {
-  font-size: 20px;
+  font-size: 26px;
 }
 .banner-large-num i:first-child {
+  margin-right: 5px;
   color: rgba(255, 255, 255, 0.3);
 }
 .banner-large-num i:last-child {
+  margin-left: 5px;
   color: rgba(255, 255, 255, 0.7);
 }
 .banner-large-num span {
@@ -2136,7 +2152,8 @@ button,
     width: 100%;
   }
 
-  .banner-large-inner {
+  .banner-large-inner,
+.banner-large-num {
     padding: 20px;
   }
 
@@ -2155,7 +2172,7 @@ button,
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 10px;
   }
 
@@ -2164,9 +2181,5 @@ button,
   }
   .banner-large-inner p {
     display: none;
-  }
-
-  .banner-large-btn {
-    margin-bottom: 15px;
   }
 }
