@@ -86,6 +86,14 @@
 		padding-top: 45px;
 		padding-bottom: 15px;
 	}
+
+	.promotion-row {
+		flex-wrap: wrap;
+	}
+
+	.promotion-col {
+		max-width: 100%;
+	}
 }
 
 // ------------------------------------------

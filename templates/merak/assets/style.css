@@ -2310,6 +2310,7 @@ button,
   background: #FBF3F0;
   padding-top: 75px;
   padding-bottom: 45px;
+  margin-bottom: 80px;
 }
 
 .category-head {
@@ -2373,6 +2374,47 @@ button,
   width: 100%;
 }
 
+.promotions-head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.promotions-head p {
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.promotion-row {
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 65px;
+}
+
+.promotion-col {
+  max-width: 20%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 30px;
+}
+.promotion-col .banner-img-hover-inner {
+  align-items: inherit;
+}
+.promotion-col .banner-img-hover-inner .banner-btn {
+  display: flex;
+  align-items: center;
+  font-size: 0;
+  padding: 9px 15px;
+}
+.promotion-col .banner-img-hover-inner .banner-btn:hover i {
+  color: #DA8A67;
+}
+.promotion-col .banner-img-hover-inner .banner-btn i {
+  font-size: 14px;
+  opacity: 1;
+  visibility: visible;
+  margin-left: 0;
+}
+
 @media (max-width: 1135px) {
   .banner-img-hover-inner {
     align-items: inherit;
@@ -2432,6 +2474,14 @@ button,
   .category {
     padding-top: 45px;
     padding-bottom: 15px;
+  }
+
+  .promotion-row {
+    flex-wrap: wrap;
+  }
+
+  .promotion-col {
+    max-width: 100%;
   }
 }
 @media (max-width: 768px) {

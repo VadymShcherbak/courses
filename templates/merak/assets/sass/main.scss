@@ -682,6 +682,7 @@
 	background: #FBF3F0;
 	padding-top: 75px;
 	padding-bottom: 45px;
+	margin-bottom: 80px;
 }
 
 .category-head {
@@ -758,6 +759,59 @@
 	
 	img {
 		width: 100%
+	}
+}
+
+// ------------------------------------------------------------------------------------------------
+// PROMOTIONS
+// ------------------------------------------------------------------------------------------------
+
+.promotions-head {
+	text-align: center;
+	margin-bottom: 40px;
+
+	p {
+		max-width: 380px;
+		margin: 0 auto;
+	}
+}
+
+.promotion-row {
+	display: flex;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-bottom: 65px;
+}
+
+.promotion-col {
+	max-width: 20%;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 30px;
+
+	.banner-img-hover-inner {
+		align-items: inherit;
+	
+		.banner-btn {
+			display: flex;
+			align-items: center;
+			font-size: 0;
+			padding: 9px 15px;
+
+			&:hover {
+
+				i {
+					color: #DA8A67;
+				}
+			}
+	
+			i {
+				font-size: 14px;
+				opacity: 1;
+				visibility: visible;
+				margin-left: 0;
+			}
+		}
 	}
 }
 
