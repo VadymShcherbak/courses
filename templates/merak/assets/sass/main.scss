@@ -623,7 +623,7 @@
 	}
 }
 
-.dress-color {
+.products-color {
 	display: flex;
 	align-items: center;
 
@@ -659,6 +659,22 @@
 
 	&.swatch-grey {
 		background-color:  #eeeeee;
+	}
+
+	&.swatch-dark-blue {
+		background-color:  #1a1a1c;
+	}
+
+	&.swatch-blue {
+		background-color:  #31397d;
+	}
+
+	&.swatch-light-blue {
+		background-color:  #cedade;
+	}
+
+	&.swatch-white {
+		background-color:  #f2f2f2;
 	}
 
 	&.swatch-large {

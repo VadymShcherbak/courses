@@ -2266,11 +2266,11 @@ button,
   margin-bottom: 0;
 }
 
-.dress-color {
+.products-color {
   display: flex;
   align-items: center;
 }
-.dress-color .product-swatch:not(:last-child) {
+.products-color .product-swatch:not(:last-child) {
   margin-right: 5px;
 }
 
@@ -2294,6 +2294,18 @@ button,
 }
 .product-swatch.swatch-grey {
   background-color: #eeeeee;
+}
+.product-swatch.swatch-dark-blue {
+  background-color: #1a1a1c;
+}
+.product-swatch.swatch-blue {
+  background-color: #31397d;
+}
+.product-swatch.swatch-light-blue {
+  background-color: #cedade;
+}
+.product-swatch.swatch-white {
+  background-color: #f2f2f2;
 }
 .product-swatch.swatch-large {
   width: 30px;
