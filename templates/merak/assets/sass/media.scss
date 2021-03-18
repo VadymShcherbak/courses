@@ -1,13 +1,41 @@
 // ------------------------------------------
+// MAX-WIDTH 1135PX
+// ------------------------------------------
+
+@media (max-width: 1135px) {
+
+	.banner-img-hover-inner {
+		align-items: inherit;
+	
+		.banner-btn {
+			display: flex;
+			align-items: center;
+			font-size: 0;
+			padding: 9px 15px;
+
+			&:hover {
+
+				i {
+					color: #DA8A67;
+				}
+			}
+	
+			i {
+				font-size: 14px;
+				opacity: 1;
+				visibility: visible;
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+// ------------------------------------------
 // MAX-WIDTH 1024PX
 // ------------------------------------------
 
 @media (max-width: 1024px) {
 
-	.banner-img-hover-inner {
-		left: 5px;
-		right: 5px;
-	}
 }
 
 // ------------------------------------------
