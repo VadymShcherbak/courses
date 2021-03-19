@@ -782,6 +782,10 @@
 // PROMOTIONS
 // ------------------------------------------------------------------------------------------------
 
+.promotions {
+	margin-bottom: 50px;
+}
+
 .promotions-head {
 	text-align: center;
 	margin-bottom: 40px;
@@ -792,14 +796,14 @@
 	}
 }
 
-.promotion-row {
+.promotions-row {
 	display: flex;
 	margin-left: -10px;
 	margin-right: -10px;
 	margin-bottom: 65px;
 }
 
-.promotion-col {
+.promotions-col {
 	max-width: 20%;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -828,6 +832,55 @@
 				margin-left: 0;
 			}
 		}
+	}
+}
+
+//**** SECOND ROW ****//
+
+.banner-large {
+	position: relative;
+
+	a {
+		@include absolute;
+		z-index: 1;
+	}
+
+	&:hover {
+
+		.banner-large-img {
+
+			img {
+				transform: scale(1.2);
+			}
+		}
+	}
+}
+
+.banner-large-img {
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		transition: all .4s ease;
+	}
+}
+
+.banner-large-inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+	max-width: 200px;
+
+	.colortext {
+		font-size: 12px;
+		font-weight: 500;
+		margin-bottom: 7px;
 	}
 }
 

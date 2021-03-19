@@ -42,7 +42,7 @@
 // MAX-WIDTH 990 PX
 // ------------------------------------------
 
-@media (max-width: 990px) {
+@media (max-width: 991px) {
 
 	.main-header {
 		margin-bottom: 0;
@@ -63,12 +63,26 @@
 		margin-bottom: 40px;
 	}
 
+	.slider-img {
+
+		img {
+			width: 100%;
+		} 
+	}
+
 	.products-header {
 		margin-bottom: 15px;
 	}
 
 	.banner {
 		margin-bottom: 10px;
+	}
+
+	.banner-img {
+
+		img {
+			width: 100%;
+		}
 	}
 
 	.row-spacing-50 {
@@ -87,11 +101,11 @@
 		padding-bottom: 15px;
 	}
 
-	.promotion-row {
+	.promotions-row {
 		flex-wrap: wrap;
 	}
 
-	.promotion-col {
+	.promotions-col {
 		max-width: 100%;
 	}
 }
@@ -122,11 +136,27 @@
 		margin-bottom: 30px;
 	}
 
+	.category {
+		margin-bottom: 60px;
+	}
+
 	.category-head {
 
 		p {
 			max-width: none;
 		}
+	}
+
+	.promotions-row {
+		margin-bottom: 20px;
+	}
+
+	.banner-large-inner {
+		max-width: none;
+	}
+
+	.promotions {
+		margin-bottom: 30px;
 	}
 }
 
