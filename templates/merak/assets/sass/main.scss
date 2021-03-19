@@ -739,11 +739,13 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	padding: 18px 30px;
+	padding: 13px 25px;
 	display: flex;
 
 	i {
 		font-size: 32px;
+		cursor: pointer;
+		padding: 5px;
 
 		&:first-child {
 			margin-right: 10px;
@@ -790,6 +792,10 @@
 
 .promotions {
 	margin-bottom: 50px;
+
+	.angle {
+		top: 40%;
+	}
 }
 
 .row-spacing-65 {
@@ -904,6 +910,21 @@
 	display: flex;
 	align-items: center;
 	margin-bottom: 20px;
+	cursor: pointer;
+
+	&:hover {
+
+		.testimonials-img {
+			
+			img {
+				opacity: .5;
+			}
+		}
+
+		h4 {
+			color: #D75A62;
+		}
+	}
 }
 
 .testimonials-client-name {
@@ -911,6 +932,7 @@
 	h4 {
 		line-height: 1.2;
 		margin-bottom: 10px;
+		transition: color .4s ease;
 	}
 
 	.colortext {
@@ -922,6 +944,63 @@
 .testimonials-img {
 	margin-right: 10px;
 	
+	img {
+		border-radius: 50%;
+		transition: opacity .4s ease;
+	}
+}
+
+.row-angle {
+	position: relative;
+}
+
+.angle {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	font-size: 38px;
+	cursor: pointer;
+
+	&:hover {
+
+		i {
+			opacity: .5;
+		}
+	}
+
+	i {
+		transition: opacity .4s ease;
+	}
+}
+
+.angle-left {
+	left: -40px;
+	color:  rgba(16, 16, 16, 0.2);
+}
+
+.angle-right {
+	right: -40px;
+	color:  rgba(16, 16, 16, 0.8);
+}
+
+// ------------------------------------------------------------------------------------------------
+// ARTICLE
+// ------------------------------------------------------------------------------------------------
+
+.blog-date {
+	display: flex;
+	align-items: center;
+}
+
+.blog-date-img {
+	width: 20px;
+	height: 20px;
+
 	img {
 		border-radius: 50%;
 	}
