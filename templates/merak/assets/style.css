@@ -1694,16 +1694,17 @@ td {
   padding: 5px;
 }
 
-ul {
-  list-style: disc;
+ul, ol {
   padding-left: 40px;
   margin-bottom: 20px;
 }
 
+ul {
+  list-style: disc;
+}
+
 ol {
   list-style: decimal;
-  padding-left: 40px;
-  margin-bottom: 20px;
 }
 
 li {
@@ -2307,6 +2308,12 @@ button,
 .product-swatch.swatch-white {
   background-color: #f2f2f2;
 }
+.product-swatch.swatch-white-blue {
+  background-color: #c5d1e3;
+}
+.product-swatch.swatch-gray-light {
+  background-color: #f2f2f2;
+}
 .product-swatch.swatch-large {
   width: 30px;
   height: 30px;
@@ -2390,6 +2397,10 @@ button,
   margin-bottom: 50px;
 }
 
+.row-spacing-65 {
+  margin-bottom: 65px;
+}
+
 .promotions-head {
   text-align: center;
   margin-bottom: 40px;
@@ -2399,32 +2410,22 @@ button,
   margin: 0 auto;
 }
 
-.promotions-row {
-  display: flex;
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-bottom: 65px;
-}
-
-.promotions-col {
-  max-width: 20%;
-  padding-left: 10px;
-  padding-right: 10px;
+.custom-col-w20 {
   margin-bottom: 30px;
 }
-.promotions-col .banner-img-hover-inner {
+.custom-col-w20 .banner-img-hover-inner {
   align-items: inherit;
 }
-.promotions-col .banner-img-hover-inner .banner-btn {
+.custom-col-w20 .banner-img-hover-inner .banner-btn {
   display: flex;
   align-items: center;
   font-size: 0;
   padding: 9px 15px;
 }
-.promotions-col .banner-img-hover-inner .banner-btn:hover i {
+.custom-col-w20 .banner-img-hover-inner .banner-btn:hover i {
   color: #DA8A67;
 }
-.promotions-col .banner-img-hover-inner .banner-btn i {
+.custom-col-w20 .banner-img-hover-inner .banner-btn i {
   font-size: 14px;
   opacity: 1;
   visibility: visible;
@@ -2472,6 +2473,14 @@ button,
   margin-bottom: 7px;
 }
 
+@media (min-width: 991px) {
+  .custom-col-w20 {
+    max-width: 20%;
+    flex: 0 0 20%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 @media (max-width: 1135px) {
   .banner-img-hover-inner {
     align-items: inherit;
@@ -2541,12 +2550,8 @@ button,
     padding-bottom: 15px;
   }
 
-  .promotions-row {
-    flex-wrap: wrap;
-  }
-
-  .promotions-col {
-    max-width: 100%;
+  .row-spacing-65 {
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 768px) {
@@ -2575,7 +2580,7 @@ button,
     max-width: none;
   }
 
-  .promotions-row {
+  .custom-row-mg-10 {
     margin-bottom: 20px;
   }
 

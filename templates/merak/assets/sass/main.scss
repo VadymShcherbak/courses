@@ -677,6 +677,14 @@
 		background-color:  #f2f2f2;
 	}
 
+	&.swatch-white-blue {
+		background-color: #c5d1e3;
+	}
+
+	&.swatch-gray-light {
+		background-color:  #f2f2f2;
+	}
+
 	&.swatch-large {
 		width: 30px;
 		height: 30px;
@@ -786,6 +794,10 @@
 	margin-bottom: 50px;
 }
 
+.row-spacing-65 {
+	margin-bottom: 65px;
+}
+
 .promotions-head {
 	text-align: center;
 	margin-bottom: 40px;
@@ -796,17 +808,7 @@
 	}
 }
 
-.promotions-row {
-	display: flex;
-	margin-left: -10px;
-	margin-right: -10px;
-	margin-bottom: 65px;
-}
-
-.promotions-col {
-	max-width: 20%;
-	padding-left: 10px;
-	padding-right: 10px;
+.custom-col-w20 {
 	margin-bottom: 30px;
 
 	.banner-img-hover-inner {
