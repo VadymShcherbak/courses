@@ -2153,6 +2153,7 @@ button,
 .products-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 40px;
 }
 .products-header h2 {
@@ -2271,8 +2272,8 @@ button,
   display: flex;
   align-items: center;
 }
-.products-color .product-swatch:not(:last-child) {
-  margin-right: 5px;
+.products-color .product-swatch {
+  margin-left: 5px;
 }
 
 .product-swatch {
@@ -2401,11 +2402,11 @@ button,
   margin-bottom: 65px;
 }
 
-.promotions-head {
+.section-head {
   text-align: center;
   margin-bottom: 40px;
 }
-.promotions-head p {
+.section-head p {
   max-width: 380px;
   margin: 0 auto;
 }
@@ -2473,6 +2474,40 @@ button,
   margin-bottom: 7px;
 }
 
+.testimonials {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  margin-bottom: 80px;
+  background-color: #FBF3F0;
+}
+
+.testimonials-wrapper {
+  background: #fff;
+  padding: 40px 30px;
+}
+
+.testimonials-client {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.testimonials-client-name h4 {
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.testimonials-client-name .colortext {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.testimonials-img {
+  margin-right: 10px;
+}
+.testimonials-img img {
+  border-radius: 50%;
+}
+
 @media (min-width: 991px) {
   .custom-col-w20 {
     max-width: 20%;
@@ -2499,6 +2534,11 @@ button,
     opacity: 1;
     visibility: visible;
     margin-left: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .casual {
+    margin-bottom: 100px;
   }
 }
 @media (max-width: 991px) {
@@ -2576,8 +2616,24 @@ button,
     margin-bottom: 60px;
   }
 
+  .category-head {
+    margin-bottom: 20px;
+  }
+  .category-head .colortext {
+    margin-bottom: 5px;
+  }
+  .category-head h2 {
+    margin-bottom: 10px;
+  }
   .category-head p {
     max-width: none;
+  }
+
+  .section-head {
+    margin-bottom: 25px;
+  }
+  .section-head h2 {
+    margin-bottom: 10px;
   }
 
   .custom-row-mg-10 {
@@ -2590,6 +2646,12 @@ button,
 
   .promotions {
     margin-bottom: 30px;
+  }
+
+  .testimonials {
+    margin-bottom: 45px;
+    padding-top: 45px;
+    padding-bottom: 15px;
   }
 }
 @media (max-width: 595px) {

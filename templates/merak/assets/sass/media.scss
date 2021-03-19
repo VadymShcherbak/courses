@@ -46,6 +46,9 @@
 
 @media (max-width: 1024px) {
 
+	.casual {
+		margin-bottom: 100px;
+	}
 }
 
 // ------------------------------------------
@@ -147,9 +150,26 @@
 	}
 
 	.category-head {
+		margin-bottom: 20px;
+
+		.colortext {
+			margin-bottom: 5px;
+		}
+
+		h2 {
+			margin-bottom: 10px;
+		}
 
 		p {
 			max-width: none;
+		}
+	}
+
+	.section-head {
+		margin-bottom: 25px;
+
+		h2 {
+			margin-bottom: 10px;
 		}
 	}
 
@@ -163,6 +183,12 @@
 
 	.promotions {
 		margin-bottom: 30px;
+	}
+
+	.testimonials {
+		margin-bottom: 45px;
+		padding-top: 45px;
+		padding-bottom: 15px;
 	}
 }
 

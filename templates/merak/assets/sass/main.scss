@@ -483,6 +483,7 @@
 .products-header {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin-bottom: 40px;
 
 	h2 {
@@ -628,10 +629,7 @@
 	align-items: center;
 
 	.product-swatch {
-
-		&:not(:last-child) {
-			margin-right: 5px;
-		}
+		margin-left: 5px;
 	}
 }
 
@@ -798,7 +796,7 @@
 	margin-bottom: 65px;
 }
 
-.promotions-head {
+.section-head {
 	text-align: center;
 	margin-bottom: 40px;
 
@@ -886,6 +884,48 @@
 	}
 }
 
+// ------------------------------------------------------------------------------------------------
+// REVIEWS
+// ------------------------------------------------------------------------------------------------
+
+.testimonials {
+	padding-top: 60px;
+	padding-bottom: 50px;
+	margin-bottom: 80px;
+	background-color: #FBF3F0;
+}
+
+.testimonials-wrapper {
+	background: #fff;
+	padding: 40px 30px;
+}
+
+.testimonials-client {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.testimonials-client-name {
+
+	h4 {
+		line-height: 1.2;
+		margin-bottom: 10px;
+	}
+
+	.colortext {
+		font-size: 13px;
+		font-weight: 500;
+	}
+}
+
+.testimonials-img {
+	margin-right: 10px;
+	
+	img {
+		border-radius: 50%;
+	}
+}
 
 @import './media.scss';
 
