@@ -1,4 +1,31 @@
 // ------------------------------------------
+// MAX-WIDTH 1190 PX
+// ------------------------------------------
+
+@media (max-width: 1190px) {
+
+		h1 {
+			font-size: 48px;
+		}
+
+	.slider-vector,
+	.slider-bg {
+		display: none;
+	}
+}
+
+// ------------------------------------------
+// MAX-WIDTH 1024 PX
+// ------------------------------------------
+
+@media (max-width: 1024px) {
+
+	.slider-btn {
+		margin-bottom: 30px;
+	}
+}
+
+// ------------------------------------------
 // MAX-WIDTH 990 PX
 // ------------------------------------------
 
@@ -10,11 +37,68 @@
 		display: none;
 	}
 
-	.header-col-left {
-		margin-left: 0;
-	}
-
 	.main-burger {
 		display: inline-flex;
+	}
+
+	.slider {
+		min-height: 690px;
+	}
+
+	.slider-col-left {
+		padding-top: 180px;
+	}
+
+	.slider-col-inner {
+		margin-left: 0;
+	}
+}
+
+// ------------------------------------------
+// MAX-WIDTH 768 PX
+// ------------------------------------------
+
+@media (max-width: 768px) {
+
+	.slider-col-img {
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.slider-nav-number {
+		font-size: 30px;
+
+		span {
+			font-size: 56px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+
+	.slider {
+		min-height: auto;
+	}
+
+	.slider-nav {
+		align-items: center;
+		padding-bottom: 10px;
+	}
+
+	.slider-col-right {
+		display: none;
+	}
+}
+
+// ------------------------------------------
+// MAX-WIDTH 576 PX
+// ------------------------------------------
+
+@media (max-width: 576px) {
+
+	h1 {
+		font-size: 34px;
 	}
 }

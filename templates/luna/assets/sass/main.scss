@@ -39,7 +39,7 @@
 	display: none;
 	padding: 15px;
 	font-size: 30px;
-	margin-right: -15px;
+	margin-right: 25px;
 	cursor: pointer;
 	transition: color .4s ease;
 
@@ -54,6 +54,14 @@
 // MAIN-HEADER
 // ------------------------------------------------------------------------------------------------
 
+.main-header {
+	position: fixed;
+	top: 20px;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+
 .header-row,
 .main-menu,
 .header-col-right {
@@ -64,6 +72,7 @@
 
 .header-row {
 	height: 100px;
+	background: #fff;
 }
 
 .header-col-left {
@@ -122,6 +131,104 @@
 			color: #DCAD8B;
 		}
 	}
+}
+
+// ------------------------------------------------------------------------------------------------
+// SLIDER
+// ------------------------------------------------------------------------------------------------
+
+.slider {
+	position: relative;
+	min-height: 880px;
+	background: #5E824C;
+}
+
+.slider-col-left {
+	padding-top: 260px;
+
+	h1 {
+		line-height: 1.2;
+		text-transform: capitalize;
+	}
+
+	p {
+		letter-spacing: 1px;
+		margin-bottom: 40px;
+	}
+}
+
+.slider-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.slider-nav-item {
+	display: flex;
+
+	.prev {
+		margin-right: 36px;
+	}
+}
+
+.prev,
+.slide-next {
+	cursor: pointer;
+	transition: opacity .4s ease;
+
+	&:hover {
+		opacity: .6;
+	}
+}
+
+.slider-btn {
+	margin-bottom: 80px;
+
+	.white-btn {
+		margin-right: 20px;
+	}
+}
+
+.slider-nav-number {
+	display: flex;
+	align-items: flex-end;
+	font-family: $title-font;
+	font-size: 40px;
+	font-weight: 300;
+
+	span {
+		font-size: 80px;
+	}
+}
+
+.slider-col-right {
+	padding-top: 180px;
+	padding-bottom: 20px;
+	z-index: 2;
+}
+
+.slider-col-inner {
+	margin-left: 40px;
+}
+
+.slider-col-img {
+	position: relative;
+	max-width: 480px;
+}
+
+.slider-vector {
+	position: absolute;
+	bottom: -40px;
+	right: -100px;
+}
+
+.slider-bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 710px;
+	height: 920px;
+	background-color: #dcad8b;
 }
 
 

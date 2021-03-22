@@ -3,10 +3,16 @@
 $title-color:  #333333;
 $body-color: #555555;
 
+//**** FONTS ****//
+
+$body-font: 'Metropolis', sans-serif;
+$title-font: 'Josefin Sans', sans-serif;
+
+
 //**** TEG-STYLE ****//
 
 body {
-	font-family: 'Metropolis', sans-serif;
+	font-family: $body-font;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.4;
@@ -15,14 +21,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 500;
+	font-family: $title-font;
+	font-weight: 300;
 	color: $title-color;
 	margin-bottom: 20px;
 }
 
 h1 {
-	font-size: 70px;
+	font-size: 69px;
 }
 
 h2 {
@@ -158,9 +164,10 @@ button,
 .button {
 	display: inline-block;
 	padding: 11px 33px;
-	border: none;
+	border: 2px solid transparent;
 	color: #fff;
 	background-color: #4D6D3D;
+	font-family: $title-font;
 	font-size: 13px;
 	font-weight: 700;
 	cursor: pointer;
@@ -175,11 +182,13 @@ button,
 .button {
 
 	&.border-btn {
+		padding: 9px 20px;
 		background-color: transparent;
-		border: 2px solid #ffffff;
+		border: 2px solid rgba(255, 255, 255, .5);
 	}
 
 	&.white-btn {
+		padding: 9px 20px;
 		background-color: #fff;
 		color: $body-color;
 	}
