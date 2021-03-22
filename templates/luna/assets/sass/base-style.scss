@@ -2,6 +2,7 @@
 
 $title-color:  #333333;
 $body-color: #555555;
+$hover-green: #5caf33;
 
 //**** FONTS ****//
 
@@ -23,6 +24,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: $title-font;
 	font-weight: 300;
+	line-height: 1.2;
 	text-transform: capitalize;
 	color: $title-color;
 	margin-bottom: 20px;
@@ -174,7 +176,6 @@ button,
 	font-weight: 700;
 	cursor: pointer;
 	outline: none;
-	transition: background-color .4s ease;
 
 	&:hover {
 		background-color: #9EB1BF;
@@ -183,13 +184,31 @@ button,
 
 .button {
 
-	&.border-btn {
+	&.border-button {
 		background-color: transparent;
 		border: 2px solid rgba(255, 255, 255, .5);
 	}
 
-	&.white-btn {
+	&.white-button {
 		background-color: #fff;
 		color: $body-color;
+	}
+
+	&.linked-button {
+		display: flex;
+		align-items: center;
+		background-color: transparent;
+		border: none;
+		color: $body-color;
+		padding: 0;
+
+		i {
+			color: #4d6d3d;
+			margin-left: 5px;
+		}
+
+		&:hover {
+			color: $hover-green;
+		}
 	}
 }

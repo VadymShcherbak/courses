@@ -44,7 +44,7 @@
 	transition: color .4s ease;
 
 	&:hover {
-		color: #DCAD8B;
+		color: $hover-green;
 	}
 
 	
@@ -92,6 +92,7 @@
 	list-style: none;
 	padding-left: 0;
 	margin-bottom: 0;
+	white-space: nowrap;
 
 	li {
 		margin-bottom: 0;
@@ -103,10 +104,10 @@
 		padding: 15px;
 
 		&:hover {
-			color: #DCAD8B;
+			color: $hover-green;
 
 			i {
-				color: #DCAD8B;
+				color: $hover-green;
 			}
 		}
 
@@ -128,7 +129,7 @@
 		cursor: pointer;
 
 		&:hover {
-			color: #DCAD8B;
+			color: $hover-green;
 		}
 	}
 }
@@ -181,10 +182,10 @@
 	}
 }
 
-.slider-btn {
+.slider-button {
 	margin-bottom: 80px;
 
-	.white-btn {
+	.white-button {
 		margin-right: 20px;
 	}
 }
@@ -241,10 +242,24 @@
 	padding-bottom: 120px;
 }
 
+.row-spacing-110 {
+	margin-bottom: 110px;
+
+	> [class*="col-"] {
+		margin-bottom: 30px;
+	}
+}
+
 .collection-wrapper {
 	display: flex;
 	align-items: center;
 }
+
+.collection-popular {
+	display: flex;
+	flex-direction: column;
+	justify-content: center
+	}
 
 .collection-info {
 	max-width: 580px;
@@ -252,6 +267,86 @@
 	p {
 		padding-right: 50px;
 		margin-bottom: 40px;
+	}
+}
+
+// ------------------------------------------
+// PRODUCT
+// ------------------------------------------
+
+.product {
+	padding: 20px;
+	background: #fff;
+
+	&:hover {
+
+		.product-img-second {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+.product-img-first {
+	position: relative;
+	margin-bottom: 20px;
+
+	.product-link {
+		z-index: 1;
+
+		@include absolute;
+	}
+}
+
+.product-img-second {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .4s ease;
+
+	@include absolute;
+}
+
+.product-item {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #4d6d3d;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.product-content {
+
+	h5 {
+		margin-bottom: 5px;
+
+		a {
+			color: $title-color;
+
+			&:hover {
+				color: $hover-green;
+			}
+		}
+	}
+
+	p {
+		a {
+			&:hover {
+				color: $hover-green;
+			}
+		}
+	}
+
+	span {
+		color:  #4d6d3d;
 	}
 }
 
