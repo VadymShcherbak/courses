@@ -1,0 +1,20 @@
+// ------------------------------------------
+// MAX-WIDTH 990 PX
+// ------------------------------------------
+
+@media (max-width: 990px) {
+
+	.main-menu,
+	.hedaer-col-center,
+	.header-col-right {
+		display: none;
+	}
+
+	.header-col-left {
+		margin-left: 0;
+	}
+
+	.main-burger {
+		display: inline-flex;
+	}
+}

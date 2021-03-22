@@ -1,0 +1,128 @@
+@import './bootstrap-grid.scss';
+@import './reset.scss';
+@import './base-style.scss';
+
+// ------------------------------------------
+// MIXIN
+// ------------------------------------------
+
+@mixin absolute {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+// ------------------------------------------
+// MODULES
+// ------------------------------------------
+
+.container {
+	width: 1450px;
+	max-width: 100%;
+}
+
+.color-scheme-light {
+	color: #fff;
+	
+	h1,h2,h3,h4,h5,h6,i,a {
+		color: #FFF;
+	}
+	
+	p, ul {
+		color: rgba(255,255,255,.8);
+	}
+}
+
+.main-burger {
+	display: none;
+	padding: 15px;
+	font-size: 30px;
+	margin-right: -15px;
+	cursor: pointer;
+	transition: color .4s ease;
+
+	&:hover {
+		color: #DCAD8B;
+	}
+
+	
+}
+
+// ------------------------------------------------------------------------------------------------
+// MAIN-HEADER
+// ------------------------------------------------------------------------------------------------
+
+.header-row,
+.main-menu,
+.header-col-right {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-row {
+	height: 100px;
+}
+
+.header-col-left {
+	flex-shrink: 0;
+	margin-right: 68px;
+	margin-left: 40px;
+}
+
+.hedaer-col-center {
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 1;
+	justify-content: flex-start;
+}
+
+.main-menu {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+
+	li {
+		margin-bottom: 0;
+	}
+
+	a {
+		display: inline-block;
+		color: inherit;
+		padding: 15px;
+
+		&:hover {
+			color: #DCAD8B;
+
+			i {
+				color: #DCAD8B;
+			}
+		}
+
+		i {
+			margin-left: 3px;
+			color: #333333;
+			transition: color .4s ease;
+		}
+	}
+}
+
+.header-col-right {
+	margin-left: 20px;
+	margin-right: 40px;
+
+	i {
+		padding: 10px 20px;
+		transition: color .4s ease;
+		cursor: pointer;
+
+		&:hover {
+			color: #DCAD8B;
+		}
+	}
+}
+
+
+@import './media.scss'
