@@ -1620,6 +1620,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
+  text-transform: capitalize;
   color: #333333;
   margin-bottom: 20px;
 }
@@ -1650,6 +1651,7 @@ h6 {
 
 p {
   margin-bottom: 20px;
+  line-height: 1.6;
 }
 p:last-child {
   margin-bottom: 0;
@@ -1753,7 +1755,7 @@ input[type=button],
 button,
 .button {
   display: inline-block;
-  padding: 11px 33px;
+  padding: 9px 20px;
   border: 2px solid transparent;
   color: #fff;
   background-color: #4D6D3D;
@@ -1772,12 +1774,10 @@ button:hover,
 }
 
 .button.border-btn {
-  padding: 9px 20px;
   background-color: transparent;
   border: 2px solid rgba(255, 255, 255, 0.5);
 }
 .button.white-btn {
-  padding: 9px 20px;
   background-color: #fff;
   color: #555555;
 }
@@ -1968,6 +1968,25 @@ button:hover,
   width: 710px;
   height: 920px;
   background-color: #dcad8b;
+}
+
+.collection {
+  background: #FCF8F8;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.collection-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.collection-info {
+  max-width: 580px;
+}
+.collection-info p {
+  padding-right: 50px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 1190px) {

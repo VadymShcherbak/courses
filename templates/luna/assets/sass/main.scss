@@ -231,5 +231,29 @@
 	background-color: #dcad8b;
 }
 
+// ------------------------------------------------------------------------------------------------
+// COLLECTION
+// ------------------------------------------------------------------------------------------------
+
+.collection {
+	background: #FCF8F8;
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.collection-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.collection-info {
+	max-width: 580px;
+
+	p {
+		padding-right: 50px;
+		margin-bottom: 40px;
+	}
+}
+
 
 @import './media.scss'
