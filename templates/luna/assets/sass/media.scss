@@ -33,11 +33,19 @@
 		margin-bottom: 20px;
 	}
 
-	.collection-popular {
+	.product-info {
 
 		h3 {
 			font-size: 32px;
 		}
+	}
+
+	.stone {
+		padding-bottom: 20px;
+	}
+
+	.product-info-stone {
+		margin-top: 0;
 	}
 }
 
@@ -91,6 +99,10 @@
 
 @media (max-width: 768px) {
 
+	h2 {
+		font-size: 40px;
+	}
+
 	.slider-col-img {
 
 		img {
@@ -106,10 +118,16 @@
 		}
 	}
 
-	.collection-info {
+	.product-info-stone {
+		margin-bottom: 20px;
 
 		h2 {
-			font-size: 40px;
+			padding-right: 0;
+			margin-bottom: 5px;
+		}
+
+		p {
+			margin-bottom: 10px;
 		}
 	}
 }
@@ -140,8 +158,16 @@
 		font-size: 34px;
 	}
 
+	h2 {
+		font-size: 28px;
+	}
+
 	p {
 		font-size: 14px;
+	}
+
+	.header-row {
+		height: 70px;
 	}
 
 	.header-col-left {
@@ -152,22 +178,26 @@
 		margin-right: 5px;
 	}
 
+	.slider-col-left {
+		padding-top: 130px;
+
+		p {
+			margin-bottom: 20px;
+		}
+	}
+
 	.slider-nav-number {
 		display: none;
 	}
 
 	.collection-info {
 
-		h2 {
-			font-size: 28px;
-		}
-
 		p {
 			margin-bottom: 15px;
 		}
 	}
 
-	.collection-popular {
+	.product-info {
 
 		h3 {
 			font-size: 24px;

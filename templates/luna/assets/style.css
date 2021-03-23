@@ -1653,6 +1653,7 @@ h6 {
 p {
   margin-bottom: 20px;
   line-height: 1.6;
+  color: rgba(85, 85, 85, 0.6);
 }
 p:last-child {
   margin-bottom: 0;
@@ -1890,7 +1891,7 @@ button:hover,
 }
 .main-menu a {
   display: inline-block;
-  color: inherit;
+  color: #333333;
   padding: 15px;
 }
 .main-menu a:hover {
@@ -1911,6 +1912,7 @@ button:hover,
 }
 .header-col-right i {
   padding: 10px 20px;
+  color: #333333;
   transition: color 0.4s ease;
   cursor: pointer;
 }
@@ -2032,7 +2034,7 @@ button:hover,
   align-items: center;
 }
 
-.collection-popular {
+.product-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2120,6 +2122,51 @@ button:hover,
 .product-content-title i {
   font-size: 18px;
   font-weight: 400;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+.product-content-title i:hover {
+  color: #ff0f0f;
+}
+
+.product-circle {
+  display: flex;
+  line-height: 1;
+  margin: 0 auto;
+}
+.product-circle .active {
+  font-weight: 700;
+}
+.product-circle i {
+  padding: 2px;
+  font-size: 10px;
+  color: #555555;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+.product-circle i:hover {
+  opacity: 1;
+}
+
+.stone {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  background: #EFF1F4;
+}
+
+.product-info-stone {
+  max-width: 460px;
+  margin-bottom: 40px;
+  margin-top: 75px;
+}
+.product-info-stone h2 {
+  padding-right: 58px;
+  margin-bottom: 10px;
+}
+
+.prod-spacing-col-20 {
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1190px) {
@@ -2146,8 +2193,16 @@ button:hover,
     margin-bottom: 20px;
   }
 
-  .collection-popular h3 {
+  .product-info h3 {
     font-size: 32px;
+  }
+
+  .stone {
+    padding-bottom: 20px;
+  }
+
+  .product-info-stone {
+    margin-top: 0;
   }
 }
 @media (max-width: 990px) {
@@ -2185,6 +2240,10 @@ button:hover,
   }
 }
 @media (max-width: 768px) {
+  h2 {
+    font-size: 40px;
+  }
+
   .slider-col-img img {
     width: 100%;
   }
@@ -2196,8 +2255,15 @@ button:hover,
     font-size: 56px;
   }
 
-  .collection-info h2 {
-    font-size: 40px;
+  .product-info-stone {
+    margin-bottom: 20px;
+  }
+  .product-info-stone h2 {
+    padding-right: 0;
+    margin-bottom: 5px;
+  }
+  .product-info-stone p {
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 767px) {
@@ -2219,8 +2285,16 @@ button:hover,
     font-size: 34px;
   }
 
+  h2 {
+    font-size: 28px;
+  }
+
   p {
     font-size: 14px;
+  }
+
+  .header-row {
+    height: 70px;
   }
 
   .header-col-left {
@@ -2231,18 +2305,22 @@ button:hover,
     margin-right: 5px;
   }
 
+  .slider-col-left {
+    padding-top: 130px;
+  }
+  .slider-col-left p {
+    margin-bottom: 20px;
+  }
+
   .slider-nav-number {
     display: none;
   }
 
-  .collection-info h2 {
-    font-size: 28px;
-  }
   .collection-info p {
     margin-bottom: 15px;
   }
 
-  .collection-popular h3 {
+  .product-info h3 {
     font-size: 24px;
     margin-bottom: 15px;
   }
