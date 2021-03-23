@@ -3,6 +3,7 @@
 $title-color:  #333333;
 $body-color: #555555;
 $hover-green: #5caf33;
+$button-hover-color:#9EB1BF;
 
 //**** FONTS ****//
 
@@ -74,6 +75,9 @@ a {
 	color: #BCC6CD;
 	transition: all .4s ease;
 
+	&:hover {
+		color: $button-hover-color;
+	}
 }
 
 strong {
@@ -178,7 +182,8 @@ button,
 	outline: none;
 
 	&:hover {
-		background-color: #9EB1BF;
+		background-color: $button-hover-color;
+		color: #fff;
 	}
 }
 
@@ -187,11 +192,20 @@ button,
 	&.border-button {
 		background-color: transparent;
 		border: 2px solid rgba(255, 255, 255, .5);
+
+		&:hover {
+			background-color: $button-hover-color;
+		}
 	}
 
 	&.white-button {
 		background-color: #fff;
 		color: $body-color;
+
+		&:hover {
+			background-color: $button-hover-color;
+			color: #fff;
+		}
 	}
 
 	&.linked-button {
@@ -210,5 +224,50 @@ button,
 		&:hover {
 			color: $hover-green;
 		}
+	}
+}
+
+// ------------------------------------------
+// MODULES
+// ------------------------------------------
+
+.container {
+	width: 1450px;
+	max-width: 100%;
+}
+
+.color-scheme-light {
+	color: #fff;
+	
+	h1,h2,h3,h4,h5,h6,i,a {
+		color: #FFF;
+	}
+	
+	p, ul {
+		color: rgba(255,255,255,.8);
+	}
+}
+
+.main-burger {
+	display: none;
+	padding: 15px;
+	font-size: 30px;
+	margin-right: 25px;
+	cursor: pointer;
+	transition: color .4s ease;
+
+	&:hover {
+		color: $hover-green;
+	}
+}
+
+.row-spacing-col-side {
+	margin-left: -10px;
+	margin-right: -10px;
+
+	> [class*="col-"] {
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 20px;
 	}
 }

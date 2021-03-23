@@ -23,6 +23,22 @@
 	.slider-button {
 		margin-bottom: 30px;
 	}
+
+	.collection {
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
+
+	.row-spacing-110 {
+		margin-bottom: 20px;
+	}
+
+	.collection-popular {
+
+		h3 {
+			font-size: 32px;
+		}
+	}
 }
 
 // ------------------------------------------
@@ -35,6 +51,10 @@
 	.hedaer-col-center,
 	.header-col-right {
 		display: none;
+	}
+
+	.header-col-left {
+		margin-right: 20px;
 	}
 
 	.main-burger {
@@ -51,6 +71,17 @@
 
 	.slider-col-inner {
 		margin-left: 0;
+	}
+
+	.collection-img {
+
+		.collection-big-word {
+			display: none;
+		}
+
+		img {
+			width: 100%;
+		}
 	}
 }
 
@@ -72,6 +103,13 @@
 
 		span {
 			font-size: 56px;
+		}
+	}
+
+	.collection-info {
+
+		h2 {
+			font-size: 40px;
 		}
 	}
 }
@@ -100,5 +138,51 @@
 
 	h1 {
 		font-size: 34px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	.header-col-left {
+		margin-left: 20px;
+	}
+
+	.main-burger {
+		margin-right: 5px;
+	}
+
+	.slider-nav-number {
+		display: none;
+	}
+
+	.collection-info {
+
+		h2 {
+			font-size: 28px;
+		}
+
+		p {
+			margin-bottom: 15px;
+		}
+	}
+
+	.collection-popular {
+
+		h3 {
+			font-size: 24px;
+			margin-bottom: 15px;
+		}
+	}
+
+	.product-img-first {
+		margin-bottom: 10px;
+	}
+
+	.product-content {
+
+		p {
+			margin-bottom: 5px;
+		}
 	}
 }

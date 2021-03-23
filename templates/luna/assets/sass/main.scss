@@ -14,42 +14,6 @@
 	bottom: 0;
 }
 
-// ------------------------------------------
-// MODULES
-// ------------------------------------------
-
-.container {
-	width: 1450px;
-	max-width: 100%;
-}
-
-.color-scheme-light {
-	color: #fff;
-	
-	h1,h2,h3,h4,h5,h6,i,a {
-		color: #FFF;
-	}
-	
-	p, ul {
-		color: rgba(255,255,255,.8);
-	}
-}
-
-.main-burger {
-	display: none;
-	padding: 15px;
-	font-size: 30px;
-	margin-right: 25px;
-	cursor: pointer;
-	transition: color .4s ease;
-
-	&:hover {
-		color: $hover-green;
-	}
-
-	
-}
-
 // ------------------------------------------------------------------------------------------------
 // MAIN-HEADER
 // ------------------------------------------------------------------------------------------------
@@ -239,7 +203,7 @@
 .collection {
 	background: #FCF8F8;
 	padding-top: 120px;
-	padding-bottom: 120px;
+	padding-bottom: 100px;
 }
 
 .row-spacing-110 {
@@ -247,6 +211,14 @@
 
 	> [class*="col-"] {
 		margin-bottom: 30px;
+	}
+}
+
+.collection-img {
+	display: flex;
+
+	.collection-big-word {
+		margin-left: 25px;
 	}
 }
 
@@ -347,6 +319,17 @@
 
 	span {
 		color:  #4d6d3d;
+	}
+}
+
+.product-content-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	i {
+		font-size: 18px;
+		font-weight: 400;
 	}
 }
 
