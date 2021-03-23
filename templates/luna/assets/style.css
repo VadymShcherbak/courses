@@ -2297,6 +2297,7 @@ button:hover,
 
 .spacing-col-20 {
   margin-bottom: 19px;
+  margin-top: 100px;
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -2417,6 +2418,10 @@ button:hover,
 
   .products .row-spacing-col-side {
     margin-bottom: 45px;
+  }
+
+  .spacing-col-20 {
+    margin-top: 40px;
   }
 }
 @media (max-width: 990px) {
