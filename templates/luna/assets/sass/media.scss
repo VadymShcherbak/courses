@@ -1,3 +1,4 @@
+
 // ------------------------------------------
 // MAX-WIDTH 1190 PX
 // ------------------------------------------
@@ -12,6 +13,14 @@
 	.slider-bg {
 		display: none;
 	}
+
+	.team-member-wrapper {
+		margin: 0;
+	}
+
+	.team-member {
+		padding: 40px;
+	}
 }
 
 // ------------------------------------------
@@ -20,8 +29,15 @@
 
 @media (max-width: 1024px) {
 
-	.slider-button {
-		margin-bottom: 30px;
+	h5 {
+		font-size: 18px;
+	}
+
+	.slider-col-left {
+
+		.footer-block-button {
+			margin-bottom: 30px;
+		}
 	}
 
 	.collection {
@@ -130,6 +146,13 @@
 			margin-bottom: 10px;
 		}
 	}
+
+	.products {
+
+		.row-spacing-col-side {
+			margin-bottom: 60px;
+		}
+	}
 }
 
 @media (max-width: 767px) {
@@ -162,8 +185,16 @@
 		font-size: 28px;
 	}
 
+	h4 {
+		font-size: 22px;
+	}
+
 	p {
 		font-size: 14px;
+	}
+
+	.button {
+		font-size: 11px;
 	}
 
 	.header-row {
@@ -214,5 +245,27 @@
 		p {
 			margin-bottom: 5px;
 		}
+	}
+
+	.footer-block-button {
+
+		.white-button {
+			margin-right: 10px;
+		}
+	}
+
+	.team-member {
+
+		p {
+			margin-bottom: 10px;
+		}
+	}
+
+	.team-member-photo {
+		top: -35px;
+	}
+
+	.team-member-sign {
+		margin-bottom: 10px;
 	}
 }

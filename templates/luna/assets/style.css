@@ -1727,9 +1727,10 @@ input[type=date],
 input[type=time],
 select,
 textarea {
-  border: 2px solid rgba(16, 16, 16, 0.05);
+  border: 1px solid rgba(33, 33, 33, 0.1);
   outline: none;
   width: 100%;
+  font-size: 11px;
 }
 
 input[type=text],
@@ -1744,6 +1745,7 @@ select {
   height: 40px;
   padding-left: 20px;
   padding-right: 20px;
+  color: rgba(20, 20, 20, 0.5);
 }
 
 textarea {
@@ -1769,6 +1771,7 @@ button,
   font-weight: 700;
   cursor: pointer;
   outline: none;
+  transition: all 0.4s ease;
 }
 input[type=submit]:hover,
 input[type=button]:hover,
@@ -1929,6 +1932,9 @@ button:hover,
 .slider-col-left {
   padding-top: 260px;
 }
+.slider-col-left .footer-block-button {
+  margin-bottom: 80px;
+}
 .slider-col-left h1 {
   line-height: 1.2;
   text-transform: capitalize;
@@ -1961,10 +1967,7 @@ button:hover,
   opacity: 0.6;
 }
 
-.slider-button {
-  margin-bottom: 80px;
-}
-.slider-button .white-button {
+.footer-block-button .white-button {
   margin-right: 20px;
 }
 
@@ -2169,6 +2172,86 @@ button:hover,
   margin-bottom: 30px;
 }
 
+.products {
+  background: #FCF8F8;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.products .row-spacing-col-side {
+  margin-bottom: 120px;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.section-title h4 {
+  margin-bottom: 10px;
+}
+.section-title p {
+  max-width: 460px;
+  text-align: center;
+}
+
+.team-member-wrapper {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.team-member {
+  position: relative;
+  background: #5E824C;
+  padding-left: 60px;
+  padding-right: 120px;
+  padding-bottom: 42px;
+  padding-top: 40px;
+}
+
+.team-member-photo {
+  position: absolute;
+  top: -40px;
+  left: 60px;
+}
+.team-member-photo img {
+  border-radius: 50%;
+}
+
+.team-member-sign {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 370px;
+  margin-bottom: 20px;
+}
+.team-member-sign h4 {
+  margin-bottom: 0;
+}
+
+.prod-news-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(img/luna-jewelry-subscribe-bg.jpg) center no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 20px;
+}
+
+.product-news {
+  text-align: center;
+  max-width: 460px;
+}
+
+.news-form {
+  display: flex;
+  align-items: center;
+}
+.news-form input[type=email] {
+  margin-right: 20px;
+}
+
 @media (max-width: 1190px) {
   h1 {
     font-size: 48px;
@@ -2178,9 +2261,21 @@ button:hover,
 .slider-bg {
     display: none;
   }
+
+  .team-member-wrapper {
+    margin: 0;
+  }
+
+  .team-member {
+    padding: 40px;
+  }
 }
 @media (max-width: 1024px) {
-  .slider-button {
+  h5 {
+    font-size: 18px;
+  }
+
+  .slider-col-left .footer-block-button {
     margin-bottom: 30px;
   }
 
@@ -2265,6 +2360,10 @@ button:hover,
   .product-info-stone p {
     margin-bottom: 10px;
   }
+
+  .products .row-spacing-col-side {
+    margin-bottom: 60px;
+  }
 }
 @media (max-width: 767px) {
   .slider {
@@ -2289,8 +2388,16 @@ button:hover,
     font-size: 28px;
   }
 
+  h4 {
+    font-size: 22px;
+  }
+
   p {
     font-size: 14px;
+  }
+
+  .button {
+    font-size: 11px;
   }
 
   .header-row {
@@ -2331,5 +2438,21 @@ button:hover,
 
   .product-content p {
     margin-bottom: 5px;
+  }
+
+  .footer-block-button .white-button {
+    margin-right: 10px;
+  }
+
+  .team-member p {
+    margin-bottom: 10px;
+  }
+
+  .team-member-photo {
+    top: -35px;
+  }
+
+  .team-member-sign {
+    margin-bottom: 10px;
   }
 }
