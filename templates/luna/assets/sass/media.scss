@@ -63,6 +63,13 @@
 	.product-info-stone {
 		margin-top: 0;
 	}
+
+	.products {
+
+		.row-spacing-col-side {
+			margin-bottom: 45px;
+		}
+	}
 }
 
 // ------------------------------------------
@@ -107,6 +114,28 @@
 			width: 100%;
 		}
 	}
+
+	.main-footer-wrapper {
+
+		.find-info {
+
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+
+		h5 {
+			margin-bottom: 10px;
+		}
+	}
+
+	.main-footer-menu {
+
+		a {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+	}
 }
 
 // ------------------------------------------
@@ -148,10 +177,11 @@
 	}
 
 	.products {
+		padding-top: 40px;
+	}
 
-		.row-spacing-col-side {
-			margin-bottom: 60px;
-		}
+	.section-title {
+		margin-bottom: 20px;
 	}
 }
 
@@ -262,10 +292,17 @@
 	}
 
 	.team-member-photo {
-		top: -35px;
+		top: -25px;
 	}
 
 	.team-member-sign {
 		margin-bottom: 10px;
+	}
+
+	.products {
+
+		.row-spacing-col-side {
+			margin-bottom: 25px;
+		}
 	}
 }

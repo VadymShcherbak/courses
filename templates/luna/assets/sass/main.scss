@@ -398,7 +398,7 @@
 .products {
 	background: #FCF8F8;
 	padding-top: 80px;
-	padding-bottom: 100px;
+	padding-bottom: 250px;
 
 	.row-spacing-col-side {
 		margin-bottom: 120px;
@@ -478,6 +478,153 @@
 
 	input[type='email'] {
 		margin-right: 20px;
+	}
+}
+
+// ------------------------------------------------------------------------------------------------
+// INSTAGRAM
+// ------------------------------------------------------------------------------------------------
+
+.instagram {
+	margin-top: -250px;
+}
+
+.inst-img {
+	position: relative;
+
+	a {
+		z-index: 1;
+		@include absolute;
+	}
+
+	&:hover {
+
+		.inst-content {
+			opacity: .5;
+			visibility: visible;
+		}
+	}
+}
+
+.inst-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 15px;
+	background: linear-gradient(to bottom, transparent, #000000);
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s linear;
+}
+
+// ------------------------------------------------------------------------------------------------
+// MAIN-FOOTER
+// ------------------------------------------------------------------------------------------------
+
+.main-footer {
+	background:  #dcad8b;
+	padding-top: 150px;
+	padding-bottom: 20px;
+	margin-top: -150px;
+}
+
+.spacing-col-20 {
+	margin-bottom: 19px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
+
+	> [class*="col-"] {
+		margin-bottom: 20px;
+	}
+}
+
+.footer-social {
+	display: flex;
+	align-items: center;
+	margin-left: -13px;
+
+	li {
+
+		&:hover {
+			opacity: .6;
+		}
+	}
+
+	a {
+		padding: 5px 13px;
+	}
+}
+
+.main-footer-left {
+
+	p {
+		margin-bottom: 10px;
+	}
+}
+
+.white-logo {
+	margin-bottom: 20px;
+}
+
+.main-footer-wrapper {
+	padding-top: 10px;
+
+	.find-info {
+
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.find-col {
+
+	h5 {
+		margin-bottom: 30px;
+	}
+}
+
+.find-info {
+
+	i {
+		font-size: 12px;
+		margin-right: 5px;
+	}
+}
+
+.main-footer-menu {
+	list-style: none;
+	margin-bottom: 0;
+	padding-left: 0;
+
+	li {
+		margin-bottom: 0;
+	}
+
+	a {
+		display: block;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		&:hover {
+			opacity: .5;
+		}
+	}
+}
+
+.main-copyright {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	p {
+		font-size: 12px;
+		margin-bottom: 0;
 	}
 }
 
