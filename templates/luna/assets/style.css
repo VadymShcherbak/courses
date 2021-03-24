@@ -1615,6 +1615,7 @@ body {
   font-size: 16px;
   line-height: 1.4;
   color: #555555;
+  background-color: #FCF8F8;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1904,8 +1905,8 @@ button:hover,
   color: #5caf33;
 }
 .main-menu a i {
-  margin-left: 3px;
-  color: #333333;
+  margin-left: 4px;
+  color: rgba(51, 51, 51, 0.6);
   transition: color 0.4s ease;
 }
 
@@ -2013,7 +2014,6 @@ button:hover,
 }
 
 .collection {
-  background: #FCF8F8;
   padding-top: 120px;
   padding-bottom: 100px;
 }
@@ -2125,6 +2125,7 @@ button:hover,
 .product-content-title i {
   font-size: 18px;
   font-weight: 400;
+  margin-left: 10px;
   cursor: pointer;
   transition: color 0.4s ease;
 }
@@ -2173,12 +2174,8 @@ button:hover,
 }
 
 .products {
-  background: #FCF8F8;
   padding-top: 80px;
-  padding-bottom: 250px;
-}
-.products .row-spacing-col-side {
-  margin-bottom: 120px;
+  padding-bottom: 90px;
 }
 
 .section-title {
@@ -2253,7 +2250,7 @@ button:hover,
 }
 
 .instagram {
-  margin-top: -250px;
+  margin-bottom: -120px;
 }
 
 .inst-img {
@@ -2267,8 +2264,11 @@ button:hover,
   right: 0;
   bottom: 0;
 }
+.inst-img img {
+  width: 100%;
+}
 .inst-img:hover .inst-content {
-  opacity: 0.5;
+  opacity: 1;
   visibility: visible;
 }
 
@@ -2282,24 +2282,29 @@ button:hover,
   justify-content: space-between;
   align-items: flex-end;
   padding: 15px;
-  background: linear-gradient(to bottom, transparent, #000000);
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s linear;
 }
 
+.inst-item {
+  display: flex;
+  align-items: center;
+}
+.inst-item i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
 .main-footer {
   background: #dcad8b;
-  padding-top: 150px;
+  padding-top: 160px;
   padding-bottom: 20px;
-  margin-top: -150px;
 }
 
 .spacing-col-20 {
   margin-bottom: 19px;
-  margin-top: 100px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .spacing-col-20 > [class*=col-] {
   margin-bottom: 20px;
@@ -2331,6 +2336,9 @@ button:hover,
 .main-footer-wrapper .find-info:not(:last-child) {
   margin-bottom: 20px;
 }
+.main-footer-wrapper h5 {
+  font-weight: 400;
+}
 
 .find-col h5 {
   margin-bottom: 30px;
@@ -2341,20 +2349,22 @@ button:hover,
   margin-right: 5px;
 }
 
-.main-footer-menu {
+.vertical-menu {
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
 }
-.main-footer-menu li {
+.vertical-menu li {
   margin-bottom: 0;
 }
-.main-footer-menu a {
-  display: block;
+.vertical-menu:not(:first-child) li a {
   padding-top: 10px;
+}
+.vertical-menu a {
+  display: block;
   padding-bottom: 10px;
 }
-.main-footer-menu a:hover {
+.vertical-menu a:hover {
   opacity: 0.5;
 }
 
@@ -2362,10 +2372,16 @@ button:hover,
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 20px;
 }
 .main-copyright p {
   font-size: 12px;
   margin-bottom: 0;
+  letter-spacing: 0.5px;
+}
+.main-copyright p:first-child {
+  margin-right: 15px;
 }
 
 @media (max-width: 1190px) {
@@ -2384,6 +2400,13 @@ button:hover,
 
   .team-member {
     padding: 40px;
+  }
+
+  .team-member-photo {
+    top: -5px;
+  }
+  .team-member-photo img {
+    width: 75%;
   }
 }
 @media (max-width: 1024px) {
@@ -2414,14 +2437,6 @@ button:hover,
 
   .product-info-stone {
     margin-top: 0;
-  }
-
-  .products .row-spacing-col-side {
-    margin-bottom: 45px;
-  }
-
-  .spacing-col-20 {
-    margin-top: 40px;
   }
 }
 @media (max-width: 990px) {
@@ -2458,6 +2473,15 @@ button:hover,
     width: 100%;
   }
 
+  .products {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .main-footer {
+    padding-top: 140px;
+  }
+
   .main-footer-wrapper .find-info:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -2465,7 +2489,7 @@ button:hover,
     margin-bottom: 10px;
   }
 
-  .main-footer-menu a {
+  .vertical-menu a {
     padding-top: 5px;
     padding-bottom: 5px;
   }
@@ -2495,10 +2519,6 @@ button:hover,
   }
   .product-info-stone p {
     margin-bottom: 10px;
-  }
-
-  .products {
-    padding-top: 40px;
   }
 
   .section-title {
@@ -2589,14 +2609,14 @@ button:hover,
   }
 
   .team-member-photo {
-    top: -25px;
+    left: 35px;
   }
 
   .team-member-sign {
     margin-bottom: 10px;
   }
 
-  .products .row-spacing-col-side {
-    margin-bottom: 25px;
+  .news-form input[type=email] {
+    margin-right: 10px;
   }
 }
