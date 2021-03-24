@@ -539,10 +539,17 @@
 	background:  #dcad8b;
 	padding-top: 160px;
 	padding-bottom: 20px;
+
+	.spacing-col-20 {
+		margin-bottom: 19px;
+	}
+
+	.vertical-menu-wrapper {
+		padding-top: 10px;
+	}
 }
 
 .spacing-col-20 {
-	margin-bottom: 19px;
 
 	> [class*="col-"] {
 		margin-bottom: 20px;
@@ -554,7 +561,7 @@
 	align-items: center;
 	margin-left: -13px;
 
-	li {
+	a {
 
 		&:hover {
 			opacity: .6;
@@ -577,8 +584,7 @@
 	margin-bottom: 20px;
 }
 
-.main-footer-wrapper {
-	padding-top: 10px;
+.vertical-menu-wrapper {
 
 	.find-info {
 
@@ -614,6 +620,13 @@
 
 	li {
 		margin-bottom: 0;
+
+		&:hover {
+
+			a {
+				opacity: .7;
+			}
+		}
 	}
 
 	&:not(:first-child) {
@@ -629,10 +642,6 @@
 	a {
 		display: block;
 		padding-bottom: 10px;
-
-		&:hover {
-			opacity: .5;
-		}
 	}
 }
 
@@ -653,5 +662,263 @@
 		}
 	}
 }
+
+// ------------------------------------------
+// SCROLL-TOP
+// ------------------------------------------
+
+.scroll-to-top {
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	box-shadow: 0px 30px 80px 0px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition: scale .4s ease;
+
+	&:hover {
+
+		i {
+			transform: scale(1.2);
+		}
+	}
+
+	i {
+		font-size: 30px;
+		font-weight: 300;
+		color: $body-color;
+	}
+}
+
+// ------------------------------------------------------------------------------------------------
+// PAGE-SHOP
+// ------------------------------------------------------------------------------------------------
+
+.shop-top {
+	padding-top: 170px;
+	padding-bottom: 60px;
+	background: url(img/shop/luna-jewelry-shop-top-img.jpg)center no-repeat;
+	background-size: cover;
+}
+
+.shop-top-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	h1 {
+		font-size: 60px;
+		margin-bottom: 2px;
+	}
+}
+
+.shop-bradcrumb {
+
+	a {
+		display: inline-flex;
+		align-items: center;
+		opacity: .6;
+		padding: 5px;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	i {
+		font-size: 20px;
+		margin-left: 10px;
+	}
+}
+
+.shop-categories {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+	margin-bottom: 0;
+	padding-left: 0;
+
+	li {
+		margin-bottom: 0;
+
+		&:hover {
+
+			a {
+				opacity: .7;
+			}
+		}
+	}
+
+	a {
+		display: flex;
+		align-items: center;
+		padding: 10px 25px;
+
+		img {
+			margin-right: 13px;
+		}
+	}
+}
+
+.categories-inner {
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.categories-name {
+	font-family: $title-font;
+}
+
+.categories-prod {
+	font-size: 12px;
+}
+
+// ------------------------------------------------------------------------------------------------
+// SHOP-PRODUCT
+// ------------------------------------------------------------------------------------------------
+
+.shop-product {
+	padding-top: 40px;
+	padding-bottom: 105px;
+
+	h5 {
+		font-weight: 400;
+	}
+
+	.border-bottom-col {
+		padding-bottom: 15px;
+	}
+}
+
+.border-bottom-col {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+	.vertical-menu {
+
+		a {
+			color: rgba(85, 85, 85, .6);
+		}
+	}
+}
+
+.shop-pr-price {
+
+	h5 {
+		padding-bottom: 35px;
+
+		&:first-child {
+			border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.price-filter {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+
+	span {
+		font-size: 12px;
+		letter-spacing: .5px;
+		color: rgba(85, 85, 85, .6);
+	}
+}
+
+.filter-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: $title-font;
+	font-size: 13px;
+	font-weight: 700;
+	width: 60px;
+	height: 30px;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.prod-swatches {
+	display: flex;
+	margin-bottom: 10px;
+
+	.swatch {
+
+		&:not(:last-child) {
+			margin-right: 13px;
+		}
+	}
+}
+
+.bestsellers-item {
+	display: flex;
+
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+}
+
+.bessellers-item-img {
+	width: 60px;
+	height: 70px;
+	margin-right: 20px;
+	overflow: hidden;
+
+	img {
+		transition: all .4s ease;
+	}
+
+	&:hover {
+
+		img {
+			transform: scale(1.2);
+		}
+	}
+}
+
+.bestsellers-inf {
+	
+	h5 {
+		font-weight: 300;
+		margin-bottom: 5px;
+
+		&:hover {
+
+			a {
+				color: $hover-green;
+			}
+		}
+	}
+
+	a {
+		color: $title-color;
+	}
+
+	span {
+		color: #4d6d3d;
+	}
+}
+
+.popularity {
+
+	select {
+	background-color: transparent;
+	border: none;
+	max-width: 130px;
+	font-size: 16px;
+	color: #555555;
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+}
+
+
 
 @import './media.scss'

@@ -1654,7 +1654,7 @@ h6 {
 p {
   margin-bottom: 20px;
   line-height: 1.6;
-  color: rgba(85, 85, 85, 0.6);
+  color: rgba(85, 85, 85, 0.7);
 }
 p:last-child {
   margin-bottom: 0;
@@ -1848,6 +1848,30 @@ button:hover,
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 20px;
+}
+
+.weight-500 {
+  font-weight: 500;
+}
+
+.swatch {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.swatch.sw-color-brown {
+  background-color: #d0ba98;
+}
+.swatch.sw-color-grey {
+  background-color: #dddddd;
+}
+.swatch.sw-color-blue {
+  background-color: #77a8c3;
+}
+
+.title-uperrcase-norm {
+  text-transform: initial;
 }
 
 .main-header {
@@ -2302,10 +2326,13 @@ button:hover,
   padding-top: 160px;
   padding-bottom: 20px;
 }
-
-.spacing-col-20 {
+.main-footer .spacing-col-20 {
   margin-bottom: 19px;
 }
+.main-footer .vertical-menu-wrapper {
+  padding-top: 10px;
+}
+
 .spacing-col-20 > [class*=col-] {
   margin-bottom: 20px;
 }
@@ -2315,7 +2342,7 @@ button:hover,
   align-items: center;
   margin-left: -13px;
 }
-.footer-social li:hover {
+.footer-social a:hover {
   opacity: 0.6;
 }
 .footer-social a {
@@ -2330,13 +2357,10 @@ button:hover,
   margin-bottom: 20px;
 }
 
-.main-footer-wrapper {
-  padding-top: 10px;
-}
-.main-footer-wrapper .find-info:not(:last-child) {
+.vertical-menu-wrapper .find-info:not(:last-child) {
   margin-bottom: 20px;
 }
-.main-footer-wrapper h5 {
+.vertical-menu-wrapper h5 {
   font-weight: 400;
 }
 
@@ -2357,15 +2381,15 @@ button:hover,
 .vertical-menu li {
   margin-bottom: 0;
 }
+.vertical-menu li:hover a {
+  opacity: 0.7;
+}
 .vertical-menu:not(:first-child) li a {
   padding-top: 10px;
 }
 .vertical-menu a {
   display: block;
   padding-bottom: 10px;
-}
-.vertical-menu a:hover {
-  opacity: 0.5;
 }
 
 .main-copyright {
@@ -2382,6 +2406,199 @@ button:hover,
 }
 .main-copyright p:first-child {
   margin-right: 15px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0px 30px 80px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: scale 0.4s ease;
+}
+.scroll-to-top:hover i {
+  transform: scale(1.2);
+}
+.scroll-to-top i {
+  font-size: 30px;
+  font-weight: 300;
+  color: #555555;
+}
+
+.shop-top {
+  padding-top: 170px;
+  padding-bottom: 60px;
+  background: url(img/shop/luna-jewelry-shop-top-img.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.shop-top-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shop-top-wrapper h1 {
+  font-size: 60px;
+  margin-bottom: 2px;
+}
+
+.shop-bradcrumb a {
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.6;
+  padding: 5px;
+}
+.shop-bradcrumb a:hover {
+  opacity: 1;
+}
+.shop-bradcrumb i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.shop-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.shop-categories li {
+  margin-bottom: 0;
+}
+.shop-categories li:hover a {
+  opacity: 0.7;
+}
+.shop-categories a {
+  display: flex;
+  align-items: center;
+  padding: 10px 25px;
+}
+.shop-categories a img {
+  margin-right: 13px;
+}
+
+.categories-inner {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.categories-name {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.categories-prod {
+  font-size: 12px;
+}
+
+.shop-product {
+  padding-top: 40px;
+  padding-bottom: 105px;
+}
+.shop-product h5 {
+  font-weight: 400;
+}
+.shop-product .border-bottom-col {
+  padding-bottom: 15px;
+}
+
+.border-bottom-col {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.border-bottom-col .vertical-menu a {
+  color: rgba(85, 85, 85, 0.6);
+}
+
+.shop-pr-price h5 {
+  padding-bottom: 35px;
+}
+.shop-pr-price h5:first-child {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.price-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.price-filter span {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: rgba(85, 85, 85, 0.6);
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  width: 60px;
+  height: 30px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.prod-swatches {
+  display: flex;
+  margin-bottom: 10px;
+}
+.prod-swatches .swatch:not(:last-child) {
+  margin-right: 13px;
+}
+
+.bestsellers-item {
+  display: flex;
+}
+.bestsellers-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.bessellers-item-img {
+  width: 60px;
+  height: 70px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+.bessellers-item-img img {
+  transition: all 0.4s ease;
+}
+.bessellers-item-img:hover img {
+  transform: scale(1.2);
+}
+
+.bestsellers-inf h5 {
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.bestsellers-inf h5:hover a {
+  color: #5caf33;
+}
+.bestsellers-inf a {
+  color: #333333;
+}
+.bestsellers-inf span {
+  color: #4d6d3d;
+}
+
+.popularity select {
+  background-color: transparent;
+  border: none;
+  max-width: 130px;
+  font-size: 16px;
+  color: #555555;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 @media (max-width: 1190px) {
@@ -2482,10 +2699,10 @@ button:hover,
     padding-top: 140px;
   }
 
-  .main-footer-wrapper .find-info:not(:last-child) {
+  .vertical-menu-wrapper .find-info:not(:last-child) {
     margin-bottom: 10px;
   }
-  .main-footer-wrapper h5 {
+  .vertical-menu-wrapper h5 {
     margin-bottom: 10px;
   }
 

@@ -59,7 +59,7 @@ h6 {
 p {
 	margin-bottom: 20px;
 	line-height: 1.6;
-	color: rgba(85, 85, 85, .6);
+	color: rgba(85, 85, 85, .7);
 
 	&:last-child {
 		margin-bottom: 0;
@@ -275,4 +275,31 @@ button,
 		padding-right: 10px;
 		margin-bottom: 20px;
 	}
+}
+
+.weight-500 {
+	font-weight: 500;
+}
+
+.swatch {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	cursor: pointer;
+
+	&.sw-color-brown {
+		background-color: #d0ba98;
+	}
+
+	&.sw-color-grey {
+		background-color: #dddddd;
+	}
+
+	&.sw-color-blue {
+		background-color: #77a8c3;
+	}
+}
+
+.title-uperrcase-norm {
+	text-transform: initial;
 }
