@@ -38,7 +38,11 @@
 @media (max-width: 1024px) {
 
 	h5 {
-		font-size: 18px;
+		font-size: 16px;
+	}
+
+	.row-spacing-120 {
+		margin-bottom: 40px;
 	}
 
 	.slider-col-left {
@@ -68,8 +72,17 @@
 		padding-bottom: 20px;
 	}
 
+	.products {
+		padding-bottom: 40px;
+		padding-top: 40px;
+	}
+
 	.product-info-stone {
 		margin-top: 0;
+	}
+
+	.shop-product {
+		margin-bottom: 40px;
 	}
 }
 
@@ -144,6 +157,13 @@
 		a {
 			padding-top: 5px;
 			padding-bottom: 5px;
+		}
+	}
+
+	.shop-pr-price {
+
+		h5 {
+			padding-bottom: 11px;
 		}
 	}
 }
@@ -310,5 +330,19 @@
 		input[type='email'] {
 			margin-right: 10px;
 		}
+	}
+
+	.shop-top {
+		padding-top: 100px;
+		padding-bottom: 40px;
+	}
+
+	.shop-product-right-head {
+		justify-content: center;
+	}
+
+	.shop-page-list {
+		flex-grow: 0;
+		flex-shrink: 0;
 	}
 }

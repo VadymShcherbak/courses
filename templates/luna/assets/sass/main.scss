@@ -784,11 +784,14 @@
 // ------------------------------------------------------------------------------------------------
 
 .shop-product {
-	padding-top: 40px;
-	padding-bottom: 105px;
+	margin-top: 40px;
+	margin-bottom: 105px;
 
-	h5 {
-		font-weight: 400;
+	.vertical-menu {
+
+		a {
+			color: rgba(85, 85, 85, .6);
+		}
 	}
 
 	.border-bottom-col {
@@ -798,13 +801,6 @@
 
 .border-bottom-col {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-	.vertical-menu {
-
-		a {
-			color: rgba(85, 85, 85, .6);
-		}
-	}
 }
 
 .shop-pr-price {
@@ -906,16 +902,78 @@
 	}
 }
 
+.shop-product-right-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+
 .popularity {
+	margin-bottom: 10px;
 
 	select {
 	background-color: transparent;
 	border: none;
 	max-width: 130px;
+	height: 20px;
 	font-size: 16px;
-	color: #555555;
+	color: $title-color;
 	padding-left: 5px;
 	padding-right: 5px;
+	}
+}
+
+.shop-page-list {
+	display: flex;
+	justify-content: flex-end;
+	flex-grow: 1;
+	flex-shrink: 1;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 10px;
+
+	a {
+		padding-left: 12px;
+		padding-right: 12px;
+		color: #777777;
+	}
+
+	span {
+		color: #777777;
+	}
+
+	.page-list-title {
+		color: $title-color;
+	}
+
+	.page-list-link {
+
+		&:hover {
+			color: $title-color;
+		}
+	}
+
+	.page-list-active {
+		color: $title-color;
+		font-weight: 500;
+	}
+}
+
+.page-grid-list {
+	margin-bottom: 10px;
+
+	i {
+		font-size: 19px;
+		padding-left: 10px;
+		padding-right: 10px;
+		cursor: pointer;
+		transition: all .4s ease;
+
+		&:hover {
+			transform: scale(1.2);
+		}
 	}
 }
 
