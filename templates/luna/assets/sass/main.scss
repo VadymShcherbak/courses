@@ -165,8 +165,9 @@
 	font-size: 40px;
 	font-weight: 300;
 
-	span {
+	.large-num {
 		font-size: 80px;
+		line-height: 1;
 	}
 }
 
@@ -539,6 +540,13 @@
 	background:  #dcad8b;
 	padding-top: 160px;
 	padding-bottom: 20px;
+
+	&.color-scheme-light {
+
+		p {
+			color: #fff;
+		}
+	}
 
 	.spacing-col-20 {
 		margin-bottom: 19px;

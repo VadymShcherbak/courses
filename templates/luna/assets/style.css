@@ -1829,7 +1829,7 @@ button:hover,
   color: #FFF;
 }
 .color-scheme-light p, .color-scheme-light ul {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .main-burger {
@@ -2019,8 +2019,9 @@ button:hover,
   font-size: 40px;
   font-weight: 300;
 }
-.slider-nav-number span {
+.slider-nav-number .large-num {
   font-size: 80px;
+  line-height: 1;
 }
 
 .slider-col-right {
@@ -2341,6 +2342,9 @@ button:hover,
   background: #dcad8b;
   padding-top: 160px;
   padding-bottom: 20px;
+}
+.main-footer.color-scheme-light p {
+  color: #fff;
 }
 .main-footer .spacing-col-20 {
   margin-bottom: 19px;
