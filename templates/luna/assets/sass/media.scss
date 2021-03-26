@@ -193,6 +193,18 @@
 			margin-bottom: 5px;
 		}
 	}
+
+	.contact {
+		margin-bottom: 40px;
+	}
+
+	.contact-info {
+		padding-left: 0;
+	}
+
+	.contact-form-wrapper {
+		padding-right: 0;
+	}
 }
 
 // ------------------------------------------
@@ -282,6 +294,10 @@
 
 	.button {
 		font-size: 11px;
+	}
+
+	.font-s-24 {
+		font-size: 22px;
 	}
 
 	.header-row {
@@ -417,5 +433,9 @@
 	.brands-border {
 		padding-top: 0;
 		padding-bottom: 0;
+	}
+
+	.map {
+		min-height: 600px;
 	}
 }

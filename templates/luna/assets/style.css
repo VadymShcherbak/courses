@@ -1519,7 +1519,7 @@ html {
 /*# sourceMappingURL=bootstrap-grid.css.map */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+a, abbr, acronym, addresss, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
@@ -1884,6 +1884,10 @@ button:hover,
 
 .uperrcase-norm {
   text-transform: initial;
+}
+
+.font-s-24 {
+  font-size: 24px;
 }
 
 .main-header {
@@ -2987,6 +2991,98 @@ button:hover,
   transition: all 0.4s ease;
 }
 
+.map {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 740px;
+  margin-bottom: 60px;
+  background: url(img/map/luna-map.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.company-address {
+  position: relative;
+  max-width: 460px;
+  background-color: #fff;
+  padding: 40px;
+  z-index: 1;
+}
+.company-address .info-box h5 {
+  max-width: 300px;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+.info-box img {
+  margin-bottom: 25px;
+}
+.info-box .company-contact {
+  color: rgba(85, 85, 85, 0.6);
+}
+.info-box .company-contact i {
+  margin-right: 11px;
+  color: #4d6d3d;
+}
+.info-box .company-contact:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.map-point-position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.contact {
+  margin-bottom: 80px;
+}
+
+.contact-info {
+  padding-left: 120px;
+}
+
+.contact-main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contact-inf-inner {
+  border-bottom: 1px solid rgba(85, 85, 85, 0.1);
+}
+.contact-inf-inner h5 {
+  text-transform: none;
+  margin-bottom: 0;
+}
+.contact-inf-inner a {
+  display: inline-block;
+  padding: 20px 10px;
+  color: #333333;
+}
+.contact-inf-inner:first-child {
+  border-top: 1px solid rgba(85, 85, 85, 0.1);
+}
+.contact-inf-inner .contact-inner-icon i {
+  font-size: 26px;
+}
+
+.contact-info-text {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-form-wrapper {
+  padding-right: 120px;
+}
+
 @media (max-width: 1190px) {
   h1 {
     font-size: 48px;
@@ -3136,6 +3232,18 @@ button:hover,
   .most-head-title h4 {
     margin-bottom: 5px;
   }
+
+  .contact {
+    margin-bottom: 40px;
+  }
+
+  .contact-info {
+    padding-left: 0;
+  }
+
+  .contact-form-wrapper {
+    padding-right: 0;
+  }
 }
 @media (max-width: 768px) {
   h2 {
@@ -3205,6 +3313,10 @@ button:hover,
 
   .button {
     font-size: 11px;
+  }
+
+  .font-s-24 {
+    font-size: 22px;
   }
 
   .header-row {
@@ -3310,5 +3422,9 @@ button:hover,
   .brands-border {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .map {
+    min-height: 600px;
   }
 }
