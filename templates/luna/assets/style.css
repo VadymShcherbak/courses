@@ -2460,6 +2460,7 @@ button:hover,
 .shop-top {
   padding-top: 170px;
   padding-bottom: 60px;
+  margin-bottom: 40px;
   background: url(img/shop/luna-jewelry-shop-top-img.jpg) center no-repeat;
   background-size: cover;
 }
@@ -2525,7 +2526,6 @@ button:hover,
 }
 
 .shop-product {
-  margin-top: 40px;
   margin-bottom: 105px;
 }
 .shop-product .vertical-menu a {
@@ -3091,6 +3091,23 @@ button:hover,
 
 .contact-form-wrapper {
   padding-right: 120px;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 @media (max-width: 1190px) {

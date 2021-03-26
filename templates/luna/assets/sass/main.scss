@@ -717,6 +717,7 @@
 .shop-top {
 	padding-top: 170px;
 	padding-bottom: 60px;
+	margin-bottom: 40px;
 	background: url(img/shop/luna-jewelry-shop-top-img.jpg)center no-repeat;
 	background-size: cover;
 }
@@ -799,7 +800,6 @@
 // ------------------------------------------------------------------------------------------------
 
 .shop-product {
-	margin-top: 40px;
 	margin-bottom: 105px;
 
 	.vertical-menu {
@@ -1507,6 +1507,23 @@
 	padding-right: 120px;
 }
 
+// ------------------------------------------------------------------------------------------------
+// BANNER-SECTION
+// ------------------------------------------------------------------------------------------------
+
+.banner {
+	position: relative;
+}
+
+.banner-inner {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	text-align: center;
+	padding: 40px;
+
+	@include absolute; 
+}
 
 
 
