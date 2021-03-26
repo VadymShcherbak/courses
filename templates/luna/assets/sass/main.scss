@@ -113,7 +113,7 @@
 	padding-top: 260px;
 
 	.footer-block-button {
-		margin-bottom: 80px;
+		margin-bottom: 130px;
 	}
 
 	h1 {
@@ -167,6 +167,13 @@
 
 	.large-num {
 		font-size: 80px;
+		line-height: 1;
+	}
+
+	.big-slash {
+		margin-left: 5px;
+		margin-right: 5px;
+		font-size: 62px;
 		line-height: 1;
 	}
 }

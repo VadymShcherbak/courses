@@ -1974,7 +1974,7 @@ button:hover,
   padding-top: 260px;
 }
 .slider-col-left .footer-block-button {
-  margin-bottom: 80px;
+  margin-bottom: 130px;
 }
 .slider-col-left h1 {
   line-height: 1.2;
@@ -2021,6 +2021,12 @@ button:hover,
 }
 .slider-nav-number .large-num {
   font-size: 80px;
+  line-height: 1;
+}
+.slider-nav-number .big-slash {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 62px;
   line-height: 1;
 }
 
@@ -3121,10 +3127,6 @@ button:hover,
     margin-bottom: 40px;
   }
 
-  .slider-col-left .footer-block-button {
-    margin-bottom: 30px;
-  }
-
   .collection {
     padding-top: 50px;
     padding-bottom: 30px;
@@ -3254,15 +3256,22 @@ button:hover,
     font-size: 40px;
   }
 
+  .slider-col-left .footer-block-button {
+    margin-bottom: 30px;
+  }
+
   .slider-col-img img {
     width: 100%;
   }
 
-  .slider-nav-number {
-    font-size: 30px;
-  }
   .slider-nav-number span {
-    font-size: 56px;
+    font-size: 36px;
+  }
+  .slider-nav-number .large-num {
+    font-size: 62px;
+  }
+  .slider-nav-number .big-slash {
+    font-size: 42px;
   }
 
   .product-info-stone {
