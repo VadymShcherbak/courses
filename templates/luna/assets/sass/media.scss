@@ -166,6 +166,33 @@
 			padding-bottom: 11px;
 		}
 	}
+
+	.editor-col-right {
+		padding-left: 0;
+
+		h2 {
+			margin-bottom: 5px;
+		}
+	}
+
+	.shop-page-list {
+		margin-bottom: 15px;
+	}
+
+	.editor-wishlist {
+		margin-bottom: 15px;
+	}
+
+	.most-head {
+		margin-bottom: 20px;
+	}
+
+	.most-head-title {
+
+		h4 {
+			margin-bottom: 5px;
+		}
+	}
 }
 
 // ------------------------------------------
@@ -348,5 +375,47 @@
 	.shop-page-list {
 		flex-grow: 0;
 		flex-shrink: 0;
+	}
+
+	.editor-info {
+		justify-content: space-between;
+
+		.editor-word-black {
+
+			&:not(:last-child) {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.company-services {
+
+		.services-item {
+
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.services-item {
+		font-size: 12px;
+
+		i {
+			font-size: 14px;
+		}
+	}
+
+	.most {
+		margin-bottom: 40px;
+	}
+
+	.brands {
+		margin-bottom: 40px;
+	}
+
+	.brands-border {
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 }
