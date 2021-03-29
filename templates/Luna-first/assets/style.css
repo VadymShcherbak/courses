@@ -1,0 +1,476 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 16px;
+    line-height: 1.4;
+    color: 9d9c9f;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: url(img/digital1.jpg)
+    center no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.intro-inner {
+    width: 100%;
+    max-width: 825px;
+    margin: 0 auto;
+}
+
+.intro-title {
+    color: #ffffff;
+    font-size: 90px;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+.colortext {
+    color: #4ba9ff;
+}
+
+.intro-text {
+    width: 580px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #aeacac;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.intro-btn {
+    display: flex;
+    justify-content: center;
+}
+
+/* header */
+.header {
+    width: 100%;
+    padding-top: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* nav */
+.nav {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+
+.nav-link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    color: #9fa0a0;
+    text-decoration: none;
+}
+
+/* button */
+.btn {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    background-color: #2e8df7;
+    padding: 10px 30px;
+
+    border: 3px solid #2e8df7;
+
+    color: #fff;
+
+    border-radius: 40px 40px;
+    text-decoration: none;
+}
+
+.btn-view {
+   margin: 0 15px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+.btn-contact {
+    margin: 0 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: 3px solid #807e7e;
+}
+
+
+/* section */
+.section {
+    width: 100%;
+
+}
+
+
+/* about */
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 115px;
+}
+
+.about-title {
+    font-size: 48px;
+    font-weight: 300;
+
+    color: #40485a;
+}
+
+.about-title:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin-top: 40px;
+
+    background-color: #4a24a8;
+}
+
+.about-text {
+    width: 690px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+
+    color: #8f939c;
+}
+
+.about-img {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+/* work */
+.work {
+    display: flex;
+}
+
+.work-title {
+    font-size: 48px;
+    font-weight: 300;
+    color: #40485a;
+
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.work-title:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin: 20px auto;
+
+
+    background-color: #4a24a8
+}
+
+.work-footer {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+
+    color: #5dafff;
+}
+
+.work-footer:after {
+    content: "";
+    display: block;
+    width: 115px;
+    height: 2px;
+    margin: 0 auto;
+
+    background-color: #5dafff;
+}
+
+/* services */
+.services {
+    display: flex;
+    margin-bottom: 65px;
+}
+
+.services-item {
+    width: 370px;
+    height: 380px;
+    margin: 0 40px;
+    padding-top: 50px;
+    transition: 0.3s linear;
+}
+
+.services-item:hover {
+    background: white;
+    display: inline-block;
+    width: 370px;
+    height: 370px;
+    box-shadow: 0 15px 25px rgba(64,72,90,0.25)
+}
+
+.services-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #40485a;
+}
+
+.services-text {
+    width: 240px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+
+    color: #8f939c;
+}
+
+.services-img {
+    text-align: center;
+}
+
+/* payme */
+.section-payme {
+    height: 75vh;
+    background: url(img/DIGITAL11%20kopia.jpg) center no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.payme {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payme-content {
+    margin-top: 110px;
+    width: 600px;
+}
+
+.payme-title h4 {
+    font-size: 62px;
+    font-weight: 300;
+
+    color: #ffffff;
+}
+
+.payme-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 115px;
+
+    color: #cfd2ff;
+}
+
+.btn-payme {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    box-shadow: 0px 30px 30px 0px rgba(76, 169, 255, 0.3);
+}
+
+.payme-img {
+    padding-top: 90px;
+}
+
+.payme-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item-title {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    color: #cfd2ff;
+}
+
+.footer-item-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+
+    color: #fff;
+}
+
+.hr-payme {
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+}
+
+/* reviews */
+
+.section-reviews {
+    margin-bottom: 155px;
+}
+
+.reviews-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.reviews-client {
+    display: flex;
+    overflow-x: scroll;
+}
+
+
+.reviews-client-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 830px;
+    height: 300px;
+    margin: 0 35px;
+    padding: 30px 60px;
+
+
+    box-shadow: 0px 30px 60px 0px rgba(64, 72, 90, 0.15);
+
+
+}
+
+.reviews-client-text {
+    width: 705px;
+    height: 85px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: #40485a;
+
+    margin-bottom: 100px;
+}
+
+.reviews-client-account {
+    display: flex;
+
+}
+
+.reviews-client-account-name {
+    font-size: 18px;
+    font-weight: 400;
+    color: #40485a;
+
+    margin-left: 20px;
+}
+
+/* footer */
+.footer {
+    height: 400px;
+    background: url(img/DIGITAL11%20kopia.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.footer-text {
+    width: 645px;
+    font-size: 18px;
+    font-size: 400;
+    letter-spacing: 1px;
+
+    color: #cfd2ff;
+}
+
+.btn-footer {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 50px;
+    margin-top: 155px;
+
+    box-shadow: 0px 30px 30px 0px rgba(76, 169, 255, 0.3);
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-inner {
+    margin: 100px 0;
+}
+
+.footer-button {
+    margin-top: 170px;
+}
+
+.hr-footer {
+    margin-bottom: 20px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coptright-text {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.coptright-signature {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
